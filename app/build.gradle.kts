@@ -2,11 +2,17 @@ plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.kotlin.android)
     alias(libs.plugins.kotlin.compose)
+
+    /* Plugin KSP */
+    alias(libs.plugins.google.devtools.ksp)
+
+    /* Plugin Dagger Hilt */
+    alias(libs.plugins.dagger.hilt.android)
 }
 
 android {
     namespace = "it.univaq.eatme"
-    compileSdk = 36
+    compileSdk = 35
 
     defaultConfig {
         applicationId = "it.univaq.eatme"
@@ -56,4 +62,15 @@ dependencies {
     androidTestImplementation(libs.androidx.compose.ui.test.junit4)
     debugImplementation(libs.androidx.compose.ui.tooling)
     debugImplementation(libs.androidx.compose.ui.test.manifest)
+
+    /* Dependency */
+
+    /* Retrofit richieste http*/
+    implementation(libs.retrofit)
+    implementation(libs.converter.gson)
+
+    /* Hilt DI */
+    implementation(libs.androidx.hilt.navigation.compose)
+    implementation(libs.hilt.android)
+    ksp(libs.dagger.hilt.compiler)
 }
