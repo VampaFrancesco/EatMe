@@ -1,6 +1,6 @@
-package it.univaq.eatme.data.remote
+package it.univaq.kebapp.data.remote
 
-data class RemoteRistoranti(
+data class RemoteKebabbari(
     val canno_inserimento: String,
     val ccomune: String,
     val cdata_e_ora_inserimento: String,

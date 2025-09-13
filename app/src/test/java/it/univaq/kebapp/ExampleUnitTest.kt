@@ -1,4 +1,4 @@
-package it.univaq.eatme
+package it.univaq.kebapp
 
 import org.junit.Test
 

@@ -11,7 +11,7 @@ plugins {
 }
 
 android {
-    namespace = "it.univaq.eatme"
+    namespace = "it.univaq.kebapp"
     compileSdk = 35
 
     defaultConfig {

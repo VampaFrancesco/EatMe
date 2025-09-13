@@ -1,4 +1,4 @@
-package it.univaq.eatme
+package it.univaq.kebapp
 
 import androidx.test.platform.app.InstrumentationRegistry
 import androidx.test.ext.junit.runners.AndroidJUnit4

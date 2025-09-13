@@ -1,4 +1,4 @@
-package it.univaq.eatme.ui.theme
+package it.univaq.kebapp.ui.theme
 
 import androidx.compose.material3.Typography
 import androidx.compose.ui.text.TextStyle
