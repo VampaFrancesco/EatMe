@@ -8,6 +8,9 @@ plugins {
 
     /* Plugin Dagger Hilt */
     alias(libs.plugins.dagger.hilt.android)
+
+    /* Plugin serializzazione */
+    alias(libs.plugins.jetbrains.serialization)
 }
 
 android {
@@ -72,5 +75,19 @@ dependencies {
     /* Hilt DI */
     implementation(libs.androidx.hilt.navigation.compose)
     implementation(libs.hilt.android)
-    ksp(libs.dagger.hilt.compiler)
+    ksp(libs.hilt.compiler)
+
+    /* Room Database */
+    implementation(libs.androidx.room.runtime)
+    implementation(libs.androidx.room.ktx)
+    ksp(libs.androidx.room.compiler)
+
+
+    /* Navigation Compose*/
+    implementation(libs.androidx.navigation.compose)
+    implementation(libs.kotlinx.serialization.json)
+
+    /* View model compose */
+    implementation(libs.androidx.lifecycle.viewmodel.compose)
+
 }

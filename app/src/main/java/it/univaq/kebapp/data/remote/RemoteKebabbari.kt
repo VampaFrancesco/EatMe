@@ -11,3 +11,5 @@ data class RemoteKebabbari(
     val cprovincia: String,
     val cregione: String
 )
+
+//minuto 1:29:32 possibile motivo, url e api non settate correttamete -> usa xampp

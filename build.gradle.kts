@@ -9,4 +9,8 @@ plugins {
 
     /* Plugin Dagger Hilt */
     alias(libs.plugins.dagger.hilt.android) apply false
+
+    /* Plugin Serializzazione */
+    alias(libs.plugins.jetbrains.serialization)
+
 }
