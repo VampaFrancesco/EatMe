@@ -8,6 +8,7 @@ import dagger.Provides
 import dagger.hilt.InstallIn
 import dagger.hilt.android.qualifiers.ApplicationContext
 import dagger.hilt.components.SingletonComponent
+import it.univaq.kebapp.common.BASE_URL
 import it.univaq.kebapp.data.local.KebabbariDatabase
 import it.univaq.kebapp.data.local.KebabbariRoomRepository
 import it.univaq.kebapp.data.local.dao.KebabbariDao
@@ -27,7 +28,7 @@ import kotlin.jvm.java
         @Provides
         @Singleton
         fun retrofitClient() : Retrofit =  Retrofit.Builder()
-                .baseUrl("BASE_URL")
+                .baseUrl(BASE_URL)
                 .addConverterFactory(GsonConverterFactory.create())
                 .build()
 
