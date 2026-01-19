@@ -7,8 +7,8 @@
     "canno_inserimento": "2015",
     "cdata_e_ora_inserimento": "2015-01-25T14:18:31Z",
     "cidentificatore_in_openstreetmap": "3050568446",
-    "clongitudine": "9.0324957",
-    "clatitudine": "45.8327621999999"
+    "clongitudine": 9.0324957,
+    "clatitudine": 45.8327621999999
   },
   {
     "ccomune": "Montalenghe",
@@ -18,8 +18,8 @@
     "canno_inserimento": "2014",
     "cdata_e_ora_inserimento": "2014-07-01T21:54:52Z",
     "cidentificatore_in_openstreetmap": "2942678036",
-    "clongitudine": "7.8355053",
-    "clatitudine": "45.3369623999999"
+    "clongitudine": 7.8355053,
+    "clatitudine": 45.3369623999999
   },
   {
     "ccomune": "Pinerolo",
@@ -29,8 +29,8 @@
     "canno_inserimento": "2012",
     "cdata_e_ora_inserimento": "2012-12-19T12:04:59Z",
     "cidentificatore_in_openstreetmap": "2074459766",
-    "clongitudine": "7.3439066",
-    "clatitudine": "44.8867352999999"
+    "clongitudine": 7.3439066,
+    "clatitudine": 44.8867352999999
   },
   {
     "ccomune": "Susa",
@@ -40,8 +40,8 @@
     "canno_inserimento": "2016",
     "cdata_e_ora_inserimento": "2016-02-22T10:10:25Z",
     "cidentificatore_in_openstreetmap": "2916040418",
-    "clongitudine": "7.0479735",
-    "clatitudine": "45.1351883999999"
+    "clongitudine": 7.0479735,
+    "clatitudine": 45.1351883999999
   },
   {
     "ccomune": "Torino",
@@ -51,8 +51,8 @@
     "canno_inserimento": "2016",
     "cdata_e_ora_inserimento": "2016-01-10T15:52:05Z",
     "cidentificatore_in_openstreetmap": "3927206676",
-    "clongitudine": "7.6442609",
-    "clatitudine": "45.0798141"
+    "clongitudine": 7.6442609,
+    "clatitudine": 45.0798141
   },
   {
     "ccomune": "Torino",
@@ -62,8 +62,8 @@
     "canno_inserimento": "2015",
     "cdata_e_ora_inserimento": "2015-06-02T18:39:33Z",
     "cidentificatore_in_openstreetmap": "2792538239",
-    "clongitudine": "7.6313302",
-    "clatitudine": "45.0405196"
+    "clongitudine": 7.6313302,
+    "clatitudine": 45.0405196
   },
   {
     "ccomune": "Asti",
@@ -73,8 +73,8 @@
     "canno_inserimento": "2015",
     "cdata_e_ora_inserimento": "2015-03-06T22:23:45Z",
     "cidentificatore_in_openstreetmap": "3385109210",
-    "clongitudine": "8.2019701",
-    "clatitudine": "44.9063205"
+    "clongitudine": 8.2019701,
+    "clatitudine": 44.9063205
   },
   {
     "ccomune": "Asti",
@@ -84,8 +84,8 @@
     "canno_inserimento": "2011",
     "cdata_e_ora_inserimento": "2011-10-17T11:22:20Z",
     "cidentificatore_in_openstreetmap": "1470693074",
-    "clongitudine": "8.20993449999999",
-    "clatitudine": "44.9017677"
+    "clongitudine": 8.20993449999999,
+    "clatitudine": 44.9017677
   },
   {
     "ccomune": "Alessandria",
@@ -95,8 +95,8 @@
     "canno_inserimento": "2015",
     "cdata_e_ora_inserimento": "2015-08-06T08:55:07Z",
     "cidentificatore_in_openstreetmap": "3469177270",
-    "clongitudine": "8.6256803",
-    "clatitudine": "44.9113702"
+    "clongitudine": 8.6256803,
+    "clatitudine": 44.9113702
   },
   {
     "ccomune": "Tortona",
@@ -106,8 +106,8 @@
     "canno_inserimento": "2014",
     "cdata_e_ora_inserimento": "2014-08-09T11:05:19Z",
     "cidentificatore_in_openstreetmap": "3006668362",
-    "clongitudine": "8.8617389",
-    "clatitudine": "44.8992202"
+    "clongitudine": 8.8617389,
+    "clatitudine": 44.8992202
   },
   {
     "ccomune": "Imperia",
@@ -117,8 +117,8 @@
     "canno_inserimento": "2015",
     "cdata_e_ora_inserimento": "2015-09-26T15:08:20Z",
     "cidentificatore_in_openstreetmap": "3760340915",
-    "clongitudine": "8.01580659999999",
-    "clatitudine": "43.877312"
+    "clongitudine": 8.01580659999999,
+    "clatitudine": 43.877312
   },
   {
     "ccomune": "Savona",
@@ -128,8 +128,8 @@
     "canno_inserimento": "2015",
     "cdata_e_ora_inserimento": "2015-10-11T02:01:50Z",
     "cidentificatore_in_openstreetmap": "857589626",
-    "clongitudine": "8.4757292",
-    "clatitudine": "44.3044993"
+    "clongitudine": 8.4757292,
+    "clatitudine": 44.3044993
   },
   {
     "ccomune": "Savona",
@@ -139,8 +139,8 @@
     "canno_inserimento": "2012",
     "cdata_e_ora_inserimento": "2012-10-20T12:46:22Z",
     "cidentificatore_in_openstreetmap": "1975009540",
-    "clongitudine": "8.4845156",
-    "clatitudine": "44.3084813999999"
+    "clongitudine": 8.4845156,
+    "clatitudine": 44.3084813999999
   },
   {
     "ccomune": "Genova",
@@ -150,8 +150,8 @@
     "canno_inserimento": "2012",
     "cdata_e_ora_inserimento": "2012-11-25T19:05:44Z",
     "cidentificatore_in_openstreetmap": "2032681362",
-    "clongitudine": "8.8740971",
-    "clatitudine": "44.4159732999999"
+    "clongitudine": 8.8740971,
+    "clatitudine": 44.4159732999999
   },
   {
     "ccomune": "Genova",
@@ -161,8 +161,8 @@
     "canno_inserimento": "2014",
     "cdata_e_ora_inserimento": "2014-05-01T19:16:52Z",
     "cidentificatore_in_openstreetmap": "2829907826",
-    "clongitudine": "8.93059689999999",
-    "clatitudine": "44.407417"
+    "clongitudine": 8.93059689999999,
+    "clatitudine": 44.407417
   },
   {
     "ccomune": "Genova",
@@ -172,8 +172,8 @@
     "canno_inserimento": "2013",
     "cdata_e_ora_inserimento": "2013-02-26T20:51:06Z",
     "cidentificatore_in_openstreetmap": "768883095",
-    "clongitudine": "8.92639",
-    "clatitudine": "44.4133767"
+    "clongitudine": 8.92639,
+    "clatitudine": 44.4133767
   },
   {
     "ccomune": "Genova",
@@ -183,8 +183,8 @@
     "canno_inserimento": "2011",
     "cdata_e_ora_inserimento": "2011-10-19T12:27:49Z",
     "cidentificatore_in_openstreetmap": "1473038552",
-    "clongitudine": "8.9531709",
-    "clatitudine": "44.4078750999999"
+    "clongitudine": 8.9531709,
+    "clatitudine": 44.4078750999999
   },
   {
     "ccomune": "Genova",
@@ -194,8 +194,8 @@
     "canno_inserimento": "2016",
     "cdata_e_ora_inserimento": "2016-01-11T21:05:29Z",
     "cidentificatore_in_openstreetmap": "3940450695",
-    "clongitudine": "8.94947329999999",
-    "clatitudine": "44.4162650999999"
+    "clongitudine": 8.94947329999999,
+    "clatitudine": 44.4162650999999
   },
   {
     "ccomune": "Genova",
@@ -205,8 +205,8 @@
     "canno_inserimento": "2012",
     "cdata_e_ora_inserimento": "2012-11-22T22:48:27Z",
     "cidentificatore_in_openstreetmap": "2027148433",
-    "clongitudine": "8.8882291",
-    "clatitudine": "44.4132101"
+    "clongitudine": 8.8882291,
+    "clatitudine": 44.4132101
   },
   {
     "ccomune": "Besozzo",
@@ -216,8 +216,8 @@
     "canno_inserimento": "2015",
     "cdata_e_ora_inserimento": "2015-12-17T12:55:27Z",
     "cidentificatore_in_openstreetmap": "3491828170",
-    "clongitudine": "8.6636194",
-    "clatitudine": "45.8442189"
+    "clongitudine": 8.6636194,
+    "clatitudine": 45.8442189
   },
   {
     "ccomune": "Gallarate",
@@ -227,8 +227,8 @@
     "canno_inserimento": "2014",
     "cdata_e_ora_inserimento": "2014-12-19T15:18:38Z",
     "cidentificatore_in_openstreetmap": "3242771287",
-    "clongitudine": "8.8103693",
-    "clatitudine": "45.6661568"
+    "clongitudine": 8.8103693,
+    "clatitudine": 45.6661568
   },
   {
     "ccomune": "Germignaga",
@@ -238,8 +238,8 @@
     "canno_inserimento": "2014",
     "cdata_e_ora_inserimento": "2014-11-26T13:14:37Z",
     "cidentificatore_in_openstreetmap": "3206093096",
-    "clongitudine": "8.7300103",
-    "clatitudine": "45.993467"
+    "clongitudine": 8.7300103,
+    "clatitudine": 45.993467
   },
   {
     "ccomune": "Luino",
@@ -249,8 +249,8 @@
     "canno_inserimento": "2013",
     "cdata_e_ora_inserimento": "2013-09-04T19:15:00Z",
     "cidentificatore_in_openstreetmap": "2446200953",
-    "clongitudine": "8.74329129999999",
-    "clatitudine": "46.0034913"
+    "clongitudine": 8.74329129999999,
+    "clatitudine": 46.0034913
   },
   {
     "ccomune": "Mornago",
@@ -260,8 +260,8 @@
     "canno_inserimento": "2016",
     "cdata_e_ora_inserimento": "2016-01-13T09:51:01Z",
     "cidentificatore_in_openstreetmap": "3832638771",
-    "clongitudine": "8.7539534",
-    "clatitudine": "45.7474368999999"
+    "clongitudine": 8.7539534,
+    "clatitudine": 45.7474368999999
   },
   {
     "ccomune": "Varese",
@@ -271,8 +271,8 @@
     "canno_inserimento": "2015",
     "cdata_e_ora_inserimento": "2015-06-01T17:15:30Z",
     "cidentificatore_in_openstreetmap": "2895199145",
-    "clongitudine": "8.8331844",
-    "clatitudine": "45.8211401"
+    "clongitudine": 8.8331844,
+    "clatitudine": 45.8211401
   },
   {
     "ccomune": "Cassano d'Adda",
@@ -282,8 +282,8 @@
     "canno_inserimento": "2014",
     "cdata_e_ora_inserimento": "2014-07-08T14:11:40Z",
     "cidentificatore_in_openstreetmap": "1992360757",
-    "clongitudine": "9.5227768",
-    "clatitudine": "45.5257330999999"
+    "clongitudine": 9.5227768,
+    "clatitudine": 45.5257330999999
   },
   {
     "ccomune": "Cesate",
@@ -293,8 +293,8 @@
     "canno_inserimento": "2009",
     "cdata_e_ora_inserimento": "2009-10-31T17:43:04Z",
     "cidentificatore_in_openstreetmap": "549114380",
-    "clongitudine": "9.0716217",
-    "clatitudine": "45.5936433999999"
+    "clongitudine": 9.0716217,
+    "clatitudine": 45.5936433999999
   },
   {
     "ccomune": "Cesate",
@@ -304,8 +304,8 @@
     "canno_inserimento": "2009",
     "cdata_e_ora_inserimento": "2009-10-31T11:32:01Z",
     "cidentificatore_in_openstreetmap": "548258653",
-    "clongitudine": "9.0789095",
-    "clatitudine": "45.5973124"
+    "clongitudine": 9.0789095,
+    "clatitudine": 45.5973124
   },
   {
     "ccomune": "Cusano Milanino",
@@ -315,8 +315,8 @@
     "canno_inserimento": "2009",
     "cdata_e_ora_inserimento": "2009-12-22T13:06:53Z",
     "cidentificatore_in_openstreetmap": "353006235",
-    "clongitudine": "9.1803193",
-    "clatitudine": "45.5470642"
+    "clongitudine": 9.1803193,
+    "clatitudine": 45.5470642
   },
   {
     "ccomune": "Legnano",
@@ -326,8 +326,8 @@
     "canno_inserimento": "2015",
     "cdata_e_ora_inserimento": "2015-09-11T16:05:08Z",
     "cidentificatore_in_openstreetmap": "3739305791",
-    "clongitudine": "8.9146777",
-    "clatitudine": "45.5973388"
+    "clongitudine": 8.9146777,
+    "clatitudine": 45.5973388
   },
   {
     "ccomune": "Milano",
@@ -337,8 +337,8 @@
     "canno_inserimento": "2009",
     "cdata_e_ora_inserimento": "2009-07-31T13:26:30Z",
     "cidentificatore_in_openstreetmap": "452495766",
-    "clongitudine": "9.1553529",
-    "clatitudine": "45.4391557"
+    "clongitudine": 9.1553529,
+    "clatitudine": 45.4391557
   },
   {
     "ccomune": "Milano",
@@ -348,8 +348,8 @@
     "canno_inserimento": "2011",
     "cdata_e_ora_inserimento": "2011-03-06T20:43:11Z",
     "cidentificatore_in_openstreetmap": "1189928760",
-    "clongitudine": "9.1656387",
-    "clatitudine": "45.483525"
+    "clongitudine": 9.1656387,
+    "clatitudine": 45.483525
   },
   {
     "ccomune": "Milano",
@@ -359,8 +359,8 @@
     "canno_inserimento": "2015",
     "cdata_e_ora_inserimento": "2015-11-04T19:38:16Z",
     "cidentificatore_in_openstreetmap": "3817768800",
-    "clongitudine": "9.2075751",
-    "clatitudine": "45.4817889999999"
+    "clongitudine": 9.2075751,
+    "clatitudine": 45.4817889999999
   },
   {
     "ccomune": "Milano",
@@ -370,8 +370,8 @@
     "canno_inserimento": "2015",
     "cdata_e_ora_inserimento": "2015-03-11T15:39:09Z",
     "cidentificatore_in_openstreetmap": "3393930895",
-    "clongitudine": "9.2225684",
-    "clatitudine": "45.4904861999999"
+    "clongitudine": 9.2225684,
+    "clatitudine": 45.4904861999999
   },
   {
     "ccomune": "Milano",
@@ -381,8 +381,8 @@
     "canno_inserimento": "2015",
     "cdata_e_ora_inserimento": "2015-02-26T16:14:13Z",
     "cidentificatore_in_openstreetmap": "3373394937",
-    "clongitudine": "9.2476935",
-    "clatitudine": "45.4457456"
+    "clongitudine": 9.2476935,
+    "clatitudine": 45.4457456
   },
   {
     "ccomune": "Sesto San Giovanni",
@@ -392,8 +392,8 @@
     "canno_inserimento": "2015",
     "cdata_e_ora_inserimento": "2015-08-15T20:53:22Z",
     "cidentificatore_in_openstreetmap": "3699082770",
-    "clongitudine": "9.2318312",
-    "clatitudine": "45.5342271"
+    "clongitudine": 9.2318312,
+    "clatitudine": 45.5342271
   },
   {
     "ccomune": "Vermezzo",
@@ -403,8 +403,8 @@
     "canno_inserimento": "2009",
     "cdata_e_ora_inserimento": "2009-11-23T16:08:36Z",
     "cidentificatore_in_openstreetmap": "569347673",
-    "clongitudine": "8.9846663",
-    "clatitudine": "45.3969226999999"
+    "clongitudine": 8.9846663,
+    "clatitudine": 45.3969226999999
   },
   {
     "ccomune": "Dalmine",
@@ -414,8 +414,8 @@
     "canno_inserimento": "2012",
     "cdata_e_ora_inserimento": "2012-10-09T18:59:07Z",
     "cidentificatore_in_openstreetmap": "1955384097",
-    "clongitudine": "9.6130543",
-    "clatitudine": "45.6415423999999"
+    "clongitudine": 9.6130543,
+    "clatitudine": 45.6415423999999
   },
   {
     "ccomune": "Brescia",
@@ -425,8 +425,8 @@
     "canno_inserimento": "2010",
     "cdata_e_ora_inserimento": "2010-05-15T18:17:56Z",
     "cidentificatore_in_openstreetmap": "567021764",
-    "clongitudine": "10.2317684999999",
-    "clatitudine": "45.5545008"
+    "clongitudine": 10.2317684999999,
+    "clatitudine": 45.5545008
   },
   {
     "ccomune": "Montichiari",
@@ -436,8 +436,8 @@
     "canno_inserimento": "2013",
     "cdata_e_ora_inserimento": "2013-06-10T13:01:19Z",
     "cidentificatore_in_openstreetmap": "2339223678",
-    "clongitudine": "10.38939",
-    "clatitudine": "45.4124872"
+    "clongitudine": 10.38939,
+    "clatitudine": 45.4124872
   },
   {
     "ccomune": "Voghera",
@@ -447,8 +447,8 @@
     "canno_inserimento": "2013",
     "cdata_e_ora_inserimento": "2013-12-27T20:14:58Z",
     "cidentificatore_in_openstreetmap": "2597391531",
-    "clongitudine": "9.0149071",
-    "clatitudine": "44.9956103"
+    "clongitudine": 9.0149071,
+    "clatitudine": 44.9956103
   },
   {
     "ccomune": "Cremona",
@@ -458,8 +458,8 @@
     "canno_inserimento": "2014",
     "cdata_e_ora_inserimento": "2014-08-14T13:24:02Z",
     "cidentificatore_in_openstreetmap": "3016438527",
-    "clongitudine": "10.0159126999999",
-    "clatitudine": "45.1417799"
+    "clongitudine": 10.0159126999999,
+    "clatitudine": 45.1417799
   },
   {
     "ccomune": "Mantova",
@@ -469,8 +469,8 @@
     "canno_inserimento": "2014",
     "cdata_e_ora_inserimento": "2014-10-30T06:00:38Z",
     "cidentificatore_in_openstreetmap": "2509756357",
-    "clongitudine": "10.7825396999999",
-    "clatitudine": "45.1579245"
+    "clongitudine": 10.7825396999999,
+    "clatitudine": 45.1579245
   },
   {
     "ccomune": "Bolzano",
@@ -480,8 +480,8 @@
     "canno_inserimento": "2014",
     "cdata_e_ora_inserimento": "2014-08-22T09:30:18Z",
     "cidentificatore_in_openstreetmap": "3034316134",
-    "clongitudine": "11.318406",
-    "clatitudine": "46.4871565999999"
+    "clongitudine": 11.318406,
+    "clatitudine": 46.4871565999999
   },
   {
     "ccomune": "Merano",
@@ -491,8 +491,8 @@
     "canno_inserimento": "2015",
     "cdata_e_ora_inserimento": "2015-03-21T14:18:25Z",
     "cidentificatore_in_openstreetmap": "2711204408",
-    "clongitudine": "11.1595478",
-    "clatitudine": "46.6732574999999"
+    "clongitudine": 11.1595478,
+    "clatitudine": 46.6732574999999
   },
   {
     "ccomune": "Salorno",
@@ -502,8 +502,8 @@
     "canno_inserimento": "2015",
     "cdata_e_ora_inserimento": "2015-07-04T09:54:14Z",
     "cidentificatore_in_openstreetmap": "1265090442",
-    "clongitudine": "11.2098865",
-    "clatitudine": "46.2409713999999"
+    "clongitudine": 11.2098865,
+    "clatitudine": 46.2409713999999
   },
   {
     "ccomune": "Nago-Torbole",
@@ -513,8 +513,8 @@
     "canno_inserimento": "2012",
     "cdata_e_ora_inserimento": "2012-04-12T11:14:40Z",
     "cidentificatore_in_openstreetmap": "861317493",
-    "clongitudine": "10.8754299",
-    "clatitudine": "45.8695474"
+    "clongitudine": 10.8754299,
+    "clatitudine": 45.8695474
   },
   {
     "ccomune": "Rovereto",
@@ -524,8 +524,8 @@
     "canno_inserimento": "2011",
     "cdata_e_ora_inserimento": "2011-03-25T11:58:27Z",
     "cidentificatore_in_openstreetmap": "417409275",
-    "clongitudine": "11.0435760999999",
-    "clatitudine": "45.8888366999999"
+    "clongitudine": 11.0435760999999,
+    "clatitudine": 45.8888366999999
   },
   {
     "ccomune": "Rovereto",
@@ -535,8 +535,8 @@
     "canno_inserimento": "2014",
     "cdata_e_ora_inserimento": "2014-09-25T20:32:20Z",
     "cidentificatore_in_openstreetmap": "417409261",
-    "clongitudine": "11.0438309",
-    "clatitudine": "45.8905754"
+    "clongitudine": 11.0438309,
+    "clatitudine": 45.8905754
   },
   {
     "ccomune": "Trento",
@@ -546,8 +546,8 @@
     "canno_inserimento": "2014",
     "cdata_e_ora_inserimento": "2014-09-25T21:15:55Z",
     "cidentificatore_in_openstreetmap": "643873322",
-    "clongitudine": "11.1305817",
-    "clatitudine": "46.0584751"
+    "clongitudine": 11.1305817,
+    "clatitudine": 46.0584751
   },
   {
     "ccomune": "Trento",
@@ -557,8 +557,8 @@
     "canno_inserimento": "2011",
     "cdata_e_ora_inserimento": "2011-07-21T23:52:45Z",
     "cidentificatore_in_openstreetmap": "618886816",
-    "clongitudine": "11.1192077",
-    "clatitudine": "46.0696631"
+    "clongitudine": 11.1192077,
+    "clatitudine": 46.0696631
   },
   {
     "ccomune": "Trento",
@@ -568,8 +568,8 @@
     "canno_inserimento": "2013",
     "cdata_e_ora_inserimento": "2013-08-21T12:38:18Z",
     "cidentificatore_in_openstreetmap": "1005689764",
-    "clongitudine": "11.121078",
-    "clatitudine": "46.0659344999999"
+    "clongitudine": 11.121078,
+    "clatitudine": 46.0659344999999
   },
   {
     "ccomune": "Trento",
@@ -579,8 +579,8 @@
     "canno_inserimento": "2015",
     "cdata_e_ora_inserimento": "2015-08-13T19:50:33Z",
     "cidentificatore_in_openstreetmap": "1131515113",
-    "clongitudine": "11.1203675",
-    "clatitudine": "46.0683221999999"
+    "clongitudine": 11.1203675,
+    "clatitudine": 46.0683221999999
   },
   {
     "ccomune": "Lavagno",
@@ -590,8 +590,8 @@
     "canno_inserimento": "2012",
     "cdata_e_ora_inserimento": "2012-03-01T21:40:15Z",
     "cidentificatore_in_openstreetmap": "1655104500",
-    "clongitudine": "11.138184",
-    "clatitudine": "45.4190200999999"
+    "clongitudine": 11.138184,
+    "clatitudine": 45.4190200999999
   },
   {
     "ccomune": "Peschiera del Garda",
@@ -601,8 +601,8 @@
     "canno_inserimento": "2013",
     "cdata_e_ora_inserimento": "2013-04-12T17:19:56Z",
     "cidentificatore_in_openstreetmap": "382038794",
-    "clongitudine": "10.6886321",
-    "clatitudine": "45.4395572999999"
+    "clongitudine": 10.6886321,
+    "clatitudine": 45.4395572999999
   },
   {
     "ccomune": "Verona",
@@ -612,8 +612,8 @@
     "canno_inserimento": "2011",
     "cdata_e_ora_inserimento": "2011-11-30T09:42:25Z",
     "cidentificatore_in_openstreetmap": "1506457460",
-    "clongitudine": "11.0344285",
-    "clatitudine": "45.439438"
+    "clongitudine": 11.0344285,
+    "clatitudine": 45.439438
   },
   {
     "ccomune": "Verona",
@@ -623,8 +623,8 @@
     "canno_inserimento": "2015",
     "cdata_e_ora_inserimento": "2015-01-04T14:04:12Z",
     "cidentificatore_in_openstreetmap": "2381215276",
-    "clongitudine": "10.9910742999999",
-    "clatitudine": "45.4390229999999"
+    "clongitudine": 10.9910742999999,
+    "clatitudine": 45.4390229999999
   },
   {
     "ccomune": "Verona",
@@ -634,8 +634,8 @@
     "canno_inserimento": "2015",
     "cdata_e_ora_inserimento": "2015-09-07T12:20:39Z",
     "cidentificatore_in_openstreetmap": "2224934729",
-    "clongitudine": "10.9470261",
-    "clatitudine": "45.4580155"
+    "clongitudine": 10.9470261,
+    "clatitudine": 45.4580155
   },
   {
     "ccomune": "Verona",
@@ -645,8 +645,8 @@
     "canno_inserimento": "2014",
     "cdata_e_ora_inserimento": "2014-01-28T08:44:29Z",
     "cidentificatore_in_openstreetmap": "2629194615",
-    "clongitudine": "11.0203551",
-    "clatitudine": "45.4425535999999"
+    "clongitudine": 11.0203551,
+    "clatitudine": 45.4425535999999
   },
   {
     "ccomune": "Bassano del Grappa",
@@ -656,8 +656,8 @@
     "canno_inserimento": "2013",
     "cdata_e_ora_inserimento": "2013-10-31T18:28:10Z",
     "cidentificatore_in_openstreetmap": "1508728373",
-    "clongitudine": "11.7346822999999",
-    "clatitudine": "45.7683985"
+    "clongitudine": 11.7346822999999,
+    "clatitudine": 45.7683985
   },
   {
     "ccomune": "Costabissara",
@@ -667,8 +667,8 @@
     "canno_inserimento": "2014",
     "cdata_e_ora_inserimento": "2014-01-31T22:51:13Z",
     "cidentificatore_in_openstreetmap": "2646330610",
-    "clongitudine": "11.4922819",
-    "clatitudine": "45.60387"
+    "clongitudine": 11.4922819,
+    "clatitudine": 45.60387
   },
   {
     "ccomune": "Dueville",
@@ -678,8 +678,8 @@
     "canno_inserimento": "2015",
     "cdata_e_ora_inserimento": "2015-06-14T17:58:43Z",
     "cidentificatore_in_openstreetmap": "1970777340",
-    "clongitudine": "11.5740022",
-    "clatitudine": "45.6383069999999"
+    "clongitudine": 11.5740022,
+    "clatitudine": 45.6383069999999
   },
   {
     "ccomune": "Thiene",
@@ -689,8 +689,8 @@
     "canno_inserimento": "2010",
     "cdata_e_ora_inserimento": "2010-06-03T17:34:16Z",
     "cidentificatore_in_openstreetmap": "759961294",
-    "clongitudine": "11.4762609",
-    "clatitudine": "45.7057742"
+    "clongitudine": 11.4762609,
+    "clatitudine": 45.7057742
   },
   {
     "ccomune": "Vicenza",
@@ -700,8 +700,8 @@
     "canno_inserimento": "2014",
     "cdata_e_ora_inserimento": "2014-01-31T22:54:47Z",
     "cidentificatore_in_openstreetmap": "2646338031",
-    "clongitudine": "11.5385668",
-    "clatitudine": "45.5654133"
+    "clongitudine": 11.5385668,
+    "clatitudine": 45.5654133
   },
   {
     "ccomune": "Vicenza",
@@ -711,8 +711,8 @@
     "canno_inserimento": "2016",
     "cdata_e_ora_inserimento": "2016-01-13T12:45:31Z",
     "cidentificatore_in_openstreetmap": "3943676350",
-    "clongitudine": "11.5193899",
-    "clatitudine": "45.5430433"
+    "clongitudine": 11.5193899,
+    "clatitudine": 45.5430433
   },
   {
     "ccomune": "Crespano del Grappa",
@@ -722,8 +722,8 @@
     "canno_inserimento": "2014",
     "cdata_e_ora_inserimento": "2014-07-27T10:08:33Z",
     "cidentificatore_in_openstreetmap": "2982456131",
-    "clongitudine": "11.8398971999999",
-    "clatitudine": "45.8284483999999"
+    "clongitudine": 11.8398971999999,
+    "clatitudine": 45.8284483999999
   },
   {
     "ccomune": "Treviso",
@@ -733,8 +733,8 @@
     "canno_inserimento": "2014",
     "cdata_e_ora_inserimento": "2014-07-16T08:58:16Z",
     "cidentificatore_in_openstreetmap": "2965675432",
-    "clongitudine": "12.2499600999999",
-    "clatitudine": "45.659205"
+    "clongitudine": 12.2499600999999,
+    "clatitudine": 45.659205
   },
   {
     "ccomune": "Villorba",
@@ -744,8 +744,8 @@
     "canno_inserimento": "2013",
     "cdata_e_ora_inserimento": "2013-06-16T21:55:28Z",
     "cidentificatore_in_openstreetmap": "2348478812",
-    "clongitudine": "12.2490884",
-    "clatitudine": "45.6946233"
+    "clongitudine": 12.2490884,
+    "clatitudine": 45.6946233
   },
   {
     "ccomune": "Mirano",
@@ -755,8 +755,8 @@
     "canno_inserimento": "2015",
     "cdata_e_ora_inserimento": "2015-05-02T08:45:19Z",
     "cidentificatore_in_openstreetmap": "3492866075",
-    "clongitudine": "12.1113263999999",
-    "clatitudine": "45.4909634999999"
+    "clongitudine": 12.1113263999999,
+    "clatitudine": 45.4909634999999
   },
   {
     "ccomune": "Portogruaro",
@@ -766,8 +766,8 @@
     "canno_inserimento": "2012",
     "cdata_e_ora_inserimento": "2012-08-16T09:27:38Z",
     "cidentificatore_in_openstreetmap": "1868447466",
-    "clongitudine": "12.8409572999999",
-    "clatitudine": "45.7738088999999"
+    "clongitudine": 12.8409572999999,
+    "clatitudine": 45.7738088999999
   },
   {
     "ccomune": "Venezia",
@@ -777,8 +777,8 @@
     "canno_inserimento": "2015",
     "cdata_e_ora_inserimento": "2015-03-13T16:04:28Z",
     "cidentificatore_in_openstreetmap": "3010651735",
-    "clongitudine": "12.3214866999999",
-    "clatitudine": "45.4385355"
+    "clongitudine": 12.3214866999999,
+    "clatitudine": 45.4385355
   },
   {
     "ccomune": "Venezia",
@@ -788,8 +788,8 @@
     "canno_inserimento": "2015",
     "cdata_e_ora_inserimento": "2015-05-12T09:48:08Z",
     "cidentificatore_in_openstreetmap": "3512114760",
-    "clongitudine": "12.3255047",
-    "clatitudine": "45.4410144"
+    "clongitudine": 12.3255047,
+    "clatitudine": 45.4410144
   },
   {
     "ccomune": "Conselve",
@@ -799,8 +799,8 @@
     "canno_inserimento": "2010",
     "cdata_e_ora_inserimento": "2010-08-31T17:11:13Z",
     "cidentificatore_in_openstreetmap": "890698501",
-    "clongitudine": "11.8682541",
-    "clatitudine": "45.2332943999999"
+    "clongitudine": 11.8682541,
+    "clatitudine": 45.2332943999999
   },
   {
     "ccomune": "Padova",
@@ -810,8 +810,8 @@
     "canno_inserimento": "2013",
     "cdata_e_ora_inserimento": "2013-03-27T09:58:25Z",
     "cidentificatore_in_openstreetmap": "1820329128",
-    "clongitudine": "11.8854966999999",
-    "clatitudine": "45.4072571999999"
+    "clongitudine": 11.8854966999999,
+    "clatitudine": 45.4072571999999
   },
   {
     "ccomune": "Padova",
@@ -821,8 +821,8 @@
     "canno_inserimento": "2013",
     "cdata_e_ora_inserimento": "2013-03-04T21:36:26Z",
     "cidentificatore_in_openstreetmap": "1460060608",
-    "clongitudine": "11.8754913",
-    "clatitudine": "45.4030604"
+    "clongitudine": 11.8754913,
+    "clatitudine": 45.4030604
   },
   {
     "ccomune": "Gemona del Friuli",
@@ -832,8 +832,8 @@
     "canno_inserimento": "2012",
     "cdata_e_ora_inserimento": "2012-06-17T08:27:01Z",
     "cidentificatore_in_openstreetmap": "1791332946",
-    "clongitudine": "13.1389292",
-    "clatitudine": "46.2791835"
+    "clongitudine": 13.1389292,
+    "clatitudine": 46.2791835
   },
   {
     "ccomune": "Palmanova",
@@ -843,8 +843,8 @@
     "canno_inserimento": "2009",
     "cdata_e_ora_inserimento": "2009-10-12T16:28:11Z",
     "cidentificatore_in_openstreetmap": "529509823",
-    "clongitudine": "13.3121223",
-    "clatitudine": "45.9056148"
+    "clongitudine": 13.3121223,
+    "clatitudine": 45.9056148
   },
   {
     "ccomune": "Cormons",
@@ -854,8 +854,8 @@
     "canno_inserimento": "2015",
     "cdata_e_ora_inserimento": "2015-07-03T09:46:08Z",
     "cidentificatore_in_openstreetmap": "3191220920",
-    "clongitudine": "13.4724299999999",
-    "clatitudine": "45.9599223"
+    "clongitudine": 13.4724299999999,
+    "clatitudine": 45.9599223
   },
   {
     "ccomune": "Gorizia",
@@ -865,8 +865,8 @@
     "canno_inserimento": "2015",
     "cdata_e_ora_inserimento": "2015-10-23T22:27:27Z",
     "cidentificatore_in_openstreetmap": "525817382",
-    "clongitudine": "13.6196079",
-    "clatitudine": "45.9428409"
+    "clongitudine": 13.6196079,
+    "clatitudine": 45.9428409
   },
   {
     "ccomune": "Gorizia",
@@ -876,8 +876,8 @@
     "canno_inserimento": "2015",
     "cdata_e_ora_inserimento": "2015-10-23T22:27:27Z",
     "cidentificatore_in_openstreetmap": "447531281",
-    "clongitudine": "13.6194661",
-    "clatitudine": "45.9421577"
+    "clongitudine": 13.6194661,
+    "clatitudine": 45.9421577
   },
   {
     "ccomune": "Monfalcone",
@@ -887,8 +887,8 @@
     "canno_inserimento": "2014",
     "cdata_e_ora_inserimento": "2014-02-21T18:50:51Z",
     "cidentificatore_in_openstreetmap": "2684032006",
-    "clongitudine": "13.5349971999999",
-    "clatitudine": "45.8080355"
+    "clongitudine": 13.5349971999999,
+    "clatitudine": 45.8080355
   },
   {
     "ccomune": "Monfalcone",
@@ -898,8 +898,8 @@
     "canno_inserimento": "2014",
     "cdata_e_ora_inserimento": "2014-01-23T16:52:34Z",
     "cidentificatore_in_openstreetmap": "2320966398",
-    "clongitudine": "13.5334521999999",
-    "clatitudine": "45.8093178"
+    "clongitudine": 13.5334521999999,
+    "clatitudine": 45.8093178
   },
   {
     "ccomune": "Trieste",
@@ -909,8 +909,8 @@
     "canno_inserimento": "2010",
     "cdata_e_ora_inserimento": "2010-06-26T15:13:09Z",
     "cidentificatore_in_openstreetmap": "791244128",
-    "clongitudine": "13.7769607999999",
-    "clatitudine": "45.6502969"
+    "clongitudine": 13.7769607999999,
+    "clatitudine": 45.6502969
   },
   {
     "ccomune": "Trieste",
@@ -920,8 +920,8 @@
     "canno_inserimento": "2012",
     "cdata_e_ora_inserimento": "2012-02-06T16:08:19Z",
     "cidentificatore_in_openstreetmap": "1620381482",
-    "clongitudine": "13.7776905",
-    "clatitudine": "45.649346"
+    "clongitudine": 13.7776905,
+    "clatitudine": 45.649346
   },
   {
     "ccomune": "Trieste",
@@ -931,8 +931,8 @@
     "canno_inserimento": "2012",
     "cdata_e_ora_inserimento": "2012-02-16T15:48:48Z",
     "cidentificatore_in_openstreetmap": "1635340662",
-    "clongitudine": "13.7885694999999",
-    "clatitudine": "45.6571023999999"
+    "clongitudine": 13.7885694999999,
+    "clatitudine": 45.6571023999999
   },
   {
     "ccomune": "Trieste",
@@ -942,8 +942,8 @@
     "canno_inserimento": "2015",
     "cdata_e_ora_inserimento": "2015-07-03T22:27:38Z",
     "cidentificatore_in_openstreetmap": "2282136122",
-    "clongitudine": "13.8102237999999",
-    "clatitudine": "45.6202595"
+    "clongitudine": 13.8102237999999,
+    "clatitudine": 45.6202595
   },
   {
     "ccomune": "Reggio nell'Emilia",
@@ -953,8 +953,8 @@
     "canno_inserimento": "2013",
     "cdata_e_ora_inserimento": "2013-12-09T16:34:30Z",
     "cidentificatore_in_openstreetmap": "2539514491",
-    "clongitudine": "10.6151525",
-    "clatitudine": "44.6972734"
+    "clongitudine": 10.6151525,
+    "clatitudine": 44.6972734
   },
   {
     "ccomune": "Bologna",
@@ -964,8 +964,8 @@
     "canno_inserimento": "2015",
     "cdata_e_ora_inserimento": "2015-06-20T10:29:14Z",
     "cidentificatore_in_openstreetmap": "3606919183",
-    "clongitudine": "11.3517606",
-    "clatitudine": "44.4950055999999"
+    "clongitudine": 11.3517606,
+    "clatitudine": 44.4950055999999
   },
   {
     "ccomune": "Bologna",
@@ -975,8 +975,8 @@
     "canno_inserimento": "2014",
     "cdata_e_ora_inserimento": "2014-12-25T10:31:24Z",
     "cidentificatore_in_openstreetmap": "2942589520",
-    "clongitudine": "11.3586469",
-    "clatitudine": "44.4937416"
+    "clongitudine": 11.3586469,
+    "clatitudine": 44.4937416
   },
   {
     "ccomune": "Bologna",
@@ -986,8 +986,8 @@
     "canno_inserimento": "2014",
     "cdata_e_ora_inserimento": "2014-11-12T14:00:13Z",
     "cidentificatore_in_openstreetmap": "3182766153",
-    "clongitudine": "11.3546532",
-    "clatitudine": "44.4978199"
+    "clongitudine": 11.3546532,
+    "clatitudine": 44.4978199
   },
   {
     "ccomune": "Bologna",
@@ -997,8 +997,8 @@
     "canno_inserimento": "2016",
     "cdata_e_ora_inserimento": "2016-01-26T18:01:56Z",
     "cidentificatore_in_openstreetmap": "3969001655",
-    "clongitudine": "11.3980234",
-    "clatitudine": "44.5096589999999"
+    "clongitudine": 11.3980234,
+    "clatitudine": 44.5096589999999
   },
   {
     "ccomune": "Bologna",
@@ -1008,8 +1008,8 @@
     "canno_inserimento": "2015",
     "cdata_e_ora_inserimento": "2015-06-24T10:39:29Z",
     "cidentificatore_in_openstreetmap": "3614811900",
-    "clongitudine": "11.3621719999999",
-    "clatitudine": "44.5026346"
+    "clongitudine": 11.3621719999999,
+    "clatitudine": 44.5026346
   },
   {
     "ccomune": "Bologna",
@@ -1019,8 +1019,8 @@
     "canno_inserimento": "2015",
     "cdata_e_ora_inserimento": "2015-10-31T09:23:44Z",
     "cidentificatore_in_openstreetmap": "3810931038",
-    "clongitudine": "11.3657533",
-    "clatitudine": "44.4926881"
+    "clongitudine": 11.3657533,
+    "clatitudine": 44.4926881
   },
   {
     "ccomune": "Ravenna",
@@ -1030,8 +1030,8 @@
     "canno_inserimento": "2010",
     "cdata_e_ora_inserimento": "2010-11-21T12:23:43Z",
     "cidentificatore_in_openstreetmap": "997683940",
-    "clongitudine": "12.1990637",
-    "clatitudine": "44.4184120999999"
+    "clongitudine": 12.1990637,
+    "clatitudine": 44.4184120999999
   },
   {
     "ccomune": "Urbino",
@@ -1041,8 +1041,8 @@
     "canno_inserimento": "2014",
     "cdata_e_ora_inserimento": "2014-08-05T22:07:18Z",
     "cidentificatore_in_openstreetmap": "2998680489",
-    "clongitudine": "12.6358859",
-    "clatitudine": "43.7268187999999"
+    "clongitudine": 12.6358859,
+    "clatitudine": 43.7268187999999
   },
   {
     "ccomune": "Ancona",
@@ -1052,8 +1052,8 @@
     "canno_inserimento": "2014",
     "cdata_e_ora_inserimento": "2014-08-16T00:32:01Z",
     "cidentificatore_in_openstreetmap": "659630543",
-    "clongitudine": "13.5074402",
-    "clatitudine": "43.6029725"
+    "clongitudine": 13.5074402,
+    "clatitudine": 43.6029725
   },
   {
     "ccomune": "Ancona",
@@ -1063,8 +1063,8 @@
     "canno_inserimento": "2014",
     "cdata_e_ora_inserimento": "2014-08-15T00:46:16Z",
     "cidentificatore_in_openstreetmap": "1238991004",
-    "clongitudine": "13.5104747",
-    "clatitudine": "43.6194388999999"
+    "clongitudine": 13.5104747,
+    "clatitudine": 43.6194388999999
   },
   {
     "ccomune": "Ancona",
@@ -1074,8 +1074,8 @@
     "canno_inserimento": "2014",
     "cdata_e_ora_inserimento": "2014-01-25T01:07:40Z",
     "cidentificatore_in_openstreetmap": "2636047200",
-    "clongitudine": "13.5135439",
-    "clatitudine": "43.6183462999999"
+    "clongitudine": 13.5135439,
+    "clatitudine": 43.6183462999999
   },
   {
     "ccomune": "Ancona",
@@ -1085,8 +1085,8 @@
     "canno_inserimento": "2011",
     "cdata_e_ora_inserimento": "2011-04-03T15:21:59Z",
     "cidentificatore_in_openstreetmap": "1231015748",
-    "clongitudine": "13.5037232",
-    "clatitudine": "43.610968"
+    "clongitudine": 13.5037232,
+    "clatitudine": 43.610968
   },
   {
     "ccomune": "Ancona",
@@ -1096,8 +1096,8 @@
     "canno_inserimento": "2012",
     "cdata_e_ora_inserimento": "2012-02-20T06:28:45Z",
     "cidentificatore_in_openstreetmap": "653001414",
-    "clongitudine": "13.506214",
-    "clatitudine": "43.6054248"
+    "clongitudine": 13.506214,
+    "clatitudine": 43.6054248
   },
   {
     "ccomune": "Ancona",
@@ -1107,8 +1107,8 @@
     "canno_inserimento": "2009",
     "cdata_e_ora_inserimento": "2009-06-25T08:01:08Z",
     "cidentificatore_in_openstreetmap": "429158764",
-    "clongitudine": "13.5158228",
-    "clatitudine": "43.6176956999999"
+    "clongitudine": 13.5158228,
+    "clatitudine": 43.6176956999999
   },
   {
     "ccomune": "Ancona",
@@ -1118,8 +1118,8 @@
     "canno_inserimento": "2016",
     "cdata_e_ora_inserimento": "2016-02-06T21:53:45Z",
     "cidentificatore_in_openstreetmap": "3992677514",
-    "clongitudine": "13.4997886",
-    "clatitudine": "43.607211"
+    "clongitudine": 13.4997886,
+    "clatitudine": 43.607211
   },
   {
     "ccomune": "Ancona",
@@ -1129,8 +1129,8 @@
     "canno_inserimento": "2013",
     "cdata_e_ora_inserimento": "2013-05-19T23:44:50Z",
     "cidentificatore_in_openstreetmap": "653001413",
-    "clongitudine": "13.5041045",
-    "clatitudine": "43.6068641999999"
+    "clongitudine": 13.5041045,
+    "clatitudine": 43.6068641999999
   },
   {
     "ccomune": "Ancona",
@@ -1140,8 +1140,8 @@
     "canno_inserimento": "2013",
     "cdata_e_ora_inserimento": "2013-05-20T23:53:43Z",
     "cidentificatore_in_openstreetmap": "2313726071",
-    "clongitudine": "13.454976",
-    "clatitudine": "43.6098748"
+    "clongitudine": 13.454976,
+    "clatitudine": 43.6098748
   },
   {
     "ccomune": "Fabriano",
@@ -1151,8 +1151,8 @@
     "canno_inserimento": "2012",
     "cdata_e_ora_inserimento": "2012-01-03T01:44:49Z",
     "cidentificatore_in_openstreetmap": "1574942344",
-    "clongitudine": "12.9071843",
-    "clatitudine": "43.3361126"
+    "clongitudine": 12.9071843,
+    "clatitudine": 43.3361126
   },
   {
     "ccomune": "Jesi",
@@ -1162,8 +1162,8 @@
     "canno_inserimento": "2014",
     "cdata_e_ora_inserimento": "2014-08-29T00:12:59Z",
     "cidentificatore_in_openstreetmap": "3048283753",
-    "clongitudine": "13.2430991",
-    "clatitudine": "43.5233118"
+    "clongitudine": 13.2430991,
+    "clatitudine": 43.5233118
   },
   {
     "ccomune": "Macerata",
@@ -1173,8 +1173,8 @@
     "canno_inserimento": "2015",
     "cdata_e_ora_inserimento": "2015-10-15T12:55:46Z",
     "cidentificatore_in_openstreetmap": "1356822272",
-    "clongitudine": "13.4443439999999",
-    "clatitudine": "43.3015358999999"
+    "clongitudine": 13.4443439999999,
+    "clatitudine": 43.3015358999999
   },
   {
     "ccomune": "Macerata",
@@ -1184,8 +1184,8 @@
     "canno_inserimento": "2016",
     "cdata_e_ora_inserimento": "2016-02-19T22:23:18Z",
     "cidentificatore_in_openstreetmap": "3110280441",
-    "clongitudine": "13.4550643999999",
-    "clatitudine": "43.2985322999999"
+    "clongitudine": 13.4550643999999,
+    "clatitudine": 43.2985322999999
   },
   {
     "ccomune": "Macerata",
@@ -1195,8 +1195,8 @@
     "canno_inserimento": "2014",
     "cdata_e_ora_inserimento": "2014-09-05T16:41:04Z",
     "cidentificatore_in_openstreetmap": "2449405783",
-    "clongitudine": "13.4557100999999",
-    "clatitudine": "43.2977534999999"
+    "clongitudine": 13.4557100999999,
+    "clatitudine": 43.2977534999999
   },
   {
     "ccomune": "Ascoli Piceno",
@@ -1206,8 +1206,8 @@
     "canno_inserimento": "2010",
     "cdata_e_ora_inserimento": "2010-02-13T02:17:02Z",
     "cidentificatore_in_openstreetmap": "637964459",
-    "clongitudine": "13.5761854",
-    "clatitudine": "42.8543701999999"
+    "clongitudine": 13.5761854,
+    "clatitudine": 42.8543701999999
   },
   {
     "ccomune": "San Benedetto del Tronto",
@@ -1217,8 +1217,8 @@
     "canno_inserimento": "2014",
     "cdata_e_ora_inserimento": "2014-04-20T21:29:31Z",
     "cidentificatore_in_openstreetmap": "1350937352",
-    "clongitudine": "13.8817319",
-    "clatitudine": "42.9538835999999"
+    "clongitudine": 13.8817319,
+    "clatitudine": 42.9538835999999
   },
   {
     "ccomune": "Livorno",
@@ -1228,8 +1228,8 @@
     "canno_inserimento": "2014",
     "cdata_e_ora_inserimento": "2014-07-26T10:20:06Z",
     "cidentificatore_in_openstreetmap": "2980844722",
-    "clongitudine": "10.3104332",
-    "clatitudine": "43.5516063999999"
+    "clongitudine": 10.3104332,
+    "clatitudine": 43.5516063999999
   },
   {
     "ccomune": "Livorno",
@@ -1239,8 +1239,8 @@
     "canno_inserimento": "2013",
     "cdata_e_ora_inserimento": "2013-10-08T14:26:00Z",
     "cidentificatore_in_openstreetmap": "2342043552",
-    "clongitudine": "10.3049274",
-    "clatitudine": "43.5490056"
+    "clongitudine": 10.3049274,
+    "clatitudine": 43.5490056
   },
   {
     "ccomune": "Livorno",
@@ -1250,8 +1250,8 @@
     "canno_inserimento": "2014",
     "cdata_e_ora_inserimento": "2014-12-21T17:59:54Z",
     "cidentificatore_in_openstreetmap": "2378540543",
-    "clongitudine": "10.3274816",
-    "clatitudine": "43.5481467999999"
+    "clongitudine": 10.3274816,
+    "clatitudine": 43.5481467999999
   },
   {
     "ccomune": "Livorno",
@@ -1261,8 +1261,8 @@
     "canno_inserimento": "2015",
     "cdata_e_ora_inserimento": "2015-06-29T13:35:24Z",
     "cidentificatore_in_openstreetmap": "3625264719",
-    "clongitudine": "10.3127757",
-    "clatitudine": "43.5409835"
+    "clongitudine": 10.3127757,
+    "clatitudine": 43.5409835
   },
   {
     "ccomune": "Livorno",
@@ -1272,8 +1272,8 @@
     "canno_inserimento": "2015",
     "cdata_e_ora_inserimento": "2015-12-28T18:01:36Z",
     "cidentificatore_in_openstreetmap": "3915015753",
-    "clongitudine": "10.3050412999999",
-    "clatitudine": "43.5422604"
+    "clongitudine": 10.3050412999999,
+    "clatitudine": 43.5422604
   },
   {
     "ccomune": "Livorno",
@@ -1283,8 +1283,8 @@
     "canno_inserimento": "2012",
     "cdata_e_ora_inserimento": "2012-11-01T21:17:14Z",
     "cidentificatore_in_openstreetmap": "1739784244",
-    "clongitudine": "10.3135531",
-    "clatitudine": "43.5508803999999"
+    "clongitudine": 10.3135531,
+    "clatitudine": 43.5508803999999
   },
   {
     "ccomune": "Cascina",
@@ -1294,8 +1294,8 @@
     "canno_inserimento": "2010",
     "cdata_e_ora_inserimento": "2010-10-06T19:08:47Z",
     "cidentificatore_in_openstreetmap": "939455654",
-    "clongitudine": "10.4882312",
-    "clatitudine": "43.6870065999999"
+    "clongitudine": 10.4882312,
+    "clatitudine": 43.6870065999999
   },
   {
     "ccomune": "Pisa",
@@ -1305,8 +1305,8 @@
     "canno_inserimento": "2014",
     "cdata_e_ora_inserimento": "2014-09-29T16:50:11Z",
     "cidentificatore_in_openstreetmap": "3102272334",
-    "clongitudine": "10.4005087",
-    "clatitudine": "43.7098629999999"
+    "clongitudine": 10.4005087,
+    "clatitudine": 43.7098629999999
   },
   {
     "ccomune": "Pisa",
@@ -1316,8 +1316,8 @@
     "canno_inserimento": "2014",
     "cdata_e_ora_inserimento": "2014-12-24T14:49:49Z",
     "cidentificatore_in_openstreetmap": "3250900630",
-    "clongitudine": "10.3895739",
-    "clatitudine": "43.7270743999999"
+    "clongitudine": 10.3895739,
+    "clatitudine": 43.7270743999999
   },
   {
     "ccomune": "Pisa",
@@ -1327,8 +1327,8 @@
     "canno_inserimento": "2015",
     "cdata_e_ora_inserimento": "2015-11-05T10:40:29Z",
     "cidentificatore_in_openstreetmap": "3818491850",
-    "clongitudine": "10.3989213",
-    "clatitudine": "43.7090802999999"
+    "clongitudine": 10.3989213,
+    "clatitudine": 43.7090802999999
   },
   {
     "ccomune": "Pisa",
@@ -1338,8 +1338,8 @@
     "canno_inserimento": "2015",
     "cdata_e_ora_inserimento": "2015-10-22T12:47:15Z",
     "cidentificatore_in_openstreetmap": "2507175163",
-    "clongitudine": "10.4039882",
-    "clatitudine": "43.7181983999999"
+    "clongitudine": 10.4039882,
+    "clatitudine": 43.7181983999999
   },
   {
     "ccomune": "Arezzo",
@@ -1349,8 +1349,8 @@
     "canno_inserimento": "2015",
     "cdata_e_ora_inserimento": "2015-05-07T03:58:35Z",
     "cidentificatore_in_openstreetmap": "3354294483",
-    "clongitudine": "11.8730984",
-    "clatitudine": "43.4571090999999"
+    "clongitudine": 11.8730984,
+    "clatitudine": 43.4571090999999
   },
   {
     "ccomune": "Castiglione della Pescaia",
@@ -1360,8 +1360,8 @@
     "canno_inserimento": "2013",
     "cdata_e_ora_inserimento": "2013-09-28T14:26:15Z",
     "cidentificatore_in_openstreetmap": "2475284107",
-    "clongitudine": "10.8808431",
-    "clatitudine": "42.7625518999999"
+    "clongitudine": 10.8808431,
+    "clatitudine": 42.7625518999999
   },
   {
     "ccomune": "Citta' di Castello",
@@ -1371,8 +1371,8 @@
     "canno_inserimento": "2014",
     "cdata_e_ora_inserimento": "2014-12-18T11:31:04Z",
     "cidentificatore_in_openstreetmap": "2785199472",
-    "clongitudine": "12.2395093999999",
-    "clatitudine": "43.4589276999999"
+    "clongitudine": 12.2395093999999,
+    "clatitudine": 43.4589276999999
   },
   {
     "ccomune": "Foligno",
@@ -1382,8 +1382,8 @@
     "canno_inserimento": "2015",
     "cdata_e_ora_inserimento": "2015-10-31T08:17:55Z",
     "cidentificatore_in_openstreetmap": "3810898164",
-    "clongitudine": "12.7068215",
-    "clatitudine": "42.9533983999999"
+    "clongitudine": 12.7068215,
+    "clatitudine": 42.9533983999999
   },
   {
     "ccomune": "Fossato di Vico",
@@ -1393,8 +1393,8 @@
     "canno_inserimento": "2013",
     "cdata_e_ora_inserimento": "2013-04-09T11:45:24Z",
     "cidentificatore_in_openstreetmap": "2260045687",
-    "clongitudine": "12.7498381",
-    "clatitudine": "43.2902495"
+    "clongitudine": 12.7498381,
+    "clatitudine": 43.2902495
   },
   {
     "ccomune": "Perugia",
@@ -1404,8 +1404,8 @@
     "canno_inserimento": "2014",
     "cdata_e_ora_inserimento": "2014-07-02T22:04:17Z",
     "cidentificatore_in_openstreetmap": "2944631250",
-    "clongitudine": "12.3890919",
-    "clatitudine": "43.1127450999999"
+    "clongitudine": 12.3890919,
+    "clatitudine": 43.1127450999999
   },
   {
     "ccomune": "Perugia",
@@ -1415,8 +1415,8 @@
     "canno_inserimento": "2014",
     "cdata_e_ora_inserimento": "2014-07-02T21:18:27Z",
     "cidentificatore_in_openstreetmap": "1942100181",
-    "clongitudine": "12.3878348",
-    "clatitudine": "43.1100092"
+    "clongitudine": 12.3878348,
+    "clatitudine": 43.1100092
   },
   {
     "ccomune": "Perugia",
@@ -1426,8 +1426,8 @@
     "canno_inserimento": "2014",
     "cdata_e_ora_inserimento": "2014-08-17T01:11:01Z",
     "cidentificatore_in_openstreetmap": "2396857568",
-    "clongitudine": "12.3895561999999",
-    "clatitudine": "43.1128787999999"
+    "clongitudine": 12.3895561999999,
+    "clatitudine": 43.1128787999999
   },
   {
     "ccomune": "Umbertide",
@@ -1437,8 +1437,8 @@
     "canno_inserimento": "2015",
     "cdata_e_ora_inserimento": "2015-09-07T10:21:22Z",
     "cidentificatore_in_openstreetmap": "1907338554",
-    "clongitudine": "12.3327677999999",
-    "clatitudine": "43.3054895"
+    "clongitudine": 12.3327677999999,
+    "clatitudine": 43.3054895
   },
   {
     "ccomune": "Umbertide",
@@ -1448,8 +1448,8 @@
     "canno_inserimento": "2013",
     "cdata_e_ora_inserimento": "2013-06-09T23:27:42Z",
     "cidentificatore_in_openstreetmap": "2338746465",
-    "clongitudine": "12.3308657",
-    "clatitudine": "43.3045613"
+    "clongitudine": 12.3308657,
+    "clatitudine": 43.3045613
   },
   {
     "ccomune": "Terni",
@@ -1459,8 +1459,8 @@
     "canno_inserimento": "2013",
     "cdata_e_ora_inserimento": "2013-04-07T20:22:59Z",
     "cidentificatore_in_openstreetmap": "2256034298",
-    "clongitudine": "12.6466177",
-    "clatitudine": "42.5611790999999"
+    "clongitudine": 12.6466177,
+    "clatitudine": 42.5611790999999
   },
   {
     "ccomune": "Rieti",
@@ -1470,8 +1470,8 @@
     "canno_inserimento": "2015",
     "cdata_e_ora_inserimento": "2015-12-06T17:02:09Z",
     "cidentificatore_in_openstreetmap": "3880527215",
-    "clongitudine": "12.8614868999999",
-    "clatitudine": "42.4052058999999"
+    "clongitudine": 12.8614868999999,
+    "clatitudine": 42.4052058999999
   },
   {
     "ccomune": "Gallicano nel Lazio",
@@ -1481,8 +1481,8 @@
     "canno_inserimento": "2015",
     "cdata_e_ora_inserimento": "2015-12-12T13:03:01Z",
     "cidentificatore_in_openstreetmap": "3889041837",
-    "clongitudine": "12.8351991",
-    "clatitudine": "41.8638096999999"
+    "clongitudine": 12.8351991,
+    "clatitudine": 41.8638096999999
   },
   {
     "ccomune": "Roma",
@@ -1492,8 +1492,8 @@
     "canno_inserimento": "2015",
     "cdata_e_ora_inserimento": "2015-09-06T15:24:05Z",
     "cidentificatore_in_openstreetmap": "319117832",
-    "clongitudine": "12.5376209",
-    "clatitudine": "41.8691572999999"
+    "clongitudine": 12.5376209,
+    "clatitudine": 41.8691572999999
   },
   {
     "ccomune": "Roma",
@@ -1503,8 +1503,8 @@
     "canno_inserimento": "2011",
     "cdata_e_ora_inserimento": "2011-12-01T10:41:17Z",
     "cidentificatore_in_openstreetmap": "1526100975",
-    "clongitudine": "12.5265027",
-    "clatitudine": "41.8913219"
+    "clongitudine": 12.5265027,
+    "clatitudine": 41.8913219
   },
   {
     "ccomune": "Roma",
@@ -1514,8 +1514,8 @@
     "canno_inserimento": "2015",
     "cdata_e_ora_inserimento": "2015-04-24T13:14:39Z",
     "cidentificatore_in_openstreetmap": "3474976376",
-    "clongitudine": "12.4790261",
-    "clatitudine": "41.8568659999999"
+    "clongitudine": 12.4790261,
+    "clatitudine": 41.8568659999999
   },
   {
     "ccomune": "Roma",
@@ -1525,8 +1525,8 @@
     "canno_inserimento": "2011",
     "cdata_e_ora_inserimento": "2011-08-29T09:14:48Z",
     "cidentificatore_in_openstreetmap": "745968430",
-    "clongitudine": "12.4557567",
-    "clatitudine": "41.9089249"
+    "clongitudine": 12.4557567,
+    "clatitudine": 41.9089249
   },
   {
     "ccomune": "Roma",
@@ -1536,8 +1536,8 @@
     "canno_inserimento": "2015",
     "cdata_e_ora_inserimento": "2015-08-03T12:21:36Z",
     "cidentificatore_in_openstreetmap": "3678854791",
-    "clongitudine": "12.5530699",
-    "clatitudine": "41.8626973"
+    "clongitudine": 12.5530699,
+    "clatitudine": 41.8626973
   },
   {
     "ccomune": "Roma",
@@ -1547,8 +1547,8 @@
     "canno_inserimento": "2013",
     "cdata_e_ora_inserimento": "2013-01-24T00:33:49Z",
     "cidentificatore_in_openstreetmap": "2034635418",
-    "clongitudine": "12.4478002",
-    "clatitudine": "41.9056331"
+    "clongitudine": 12.4478002,
+    "clatitudine": 41.9056331
   },
   {
     "ccomune": "Roma",
@@ -1558,8 +1558,8 @@
     "canno_inserimento": "2012",
     "cdata_e_ora_inserimento": "2012-01-11T17:35:13Z",
     "cidentificatore_in_openstreetmap": "1271125319",
-    "clongitudine": "12.4502606",
-    "clatitudine": "41.9074080999999"
+    "clongitudine": 12.4502606,
+    "clatitudine": 41.9074080999999
   },
   {
     "ccomune": "Napoli",
@@ -1569,8 +1569,8 @@
     "canno_inserimento": "2014",
     "cdata_e_ora_inserimento": "2014-09-04T07:15:36Z",
     "cidentificatore_in_openstreetmap": "3058697157",
-    "clongitudine": "14.1747938",
-    "clatitudine": "40.8167722"
+    "clongitudine": 14.1747938,
+    "clatitudine": 40.8167722
   },
   {
     "ccomune": "Napoli",
@@ -1580,8 +1580,8 @@
     "canno_inserimento": "2013",
     "cdata_e_ora_inserimento": "2013-11-11T23:15:06Z",
     "cidentificatore_in_openstreetmap": "2528638395",
-    "clongitudine": "14.2711106999999",
-    "clatitudine": "40.8533227"
+    "clongitudine": 14.2711106999999,
+    "clatitudine": 40.8533227
   },
   {
     "ccomune": "Montesilvano",
@@ -1591,8 +1591,8 @@
     "canno_inserimento": "2015",
     "cdata_e_ora_inserimento": "2015-02-24T14:18:16Z",
     "cidentificatore_in_openstreetmap": "3370213052",
-    "clongitudine": "14.1723629",
-    "clatitudine": "42.4982527"
+    "clongitudine": 14.1723629,
+    "clatitudine": 42.4982527
   },
   {
     "ccomune": "Pescara",
@@ -1602,8 +1602,8 @@
     "canno_inserimento": "2010",
     "cdata_e_ora_inserimento": "2010-05-04T08:46:11Z",
     "cidentificatore_in_openstreetmap": "662780534",
-    "clongitudine": "14.2095406",
-    "clatitudine": "42.4732042999999"
+    "clongitudine": 14.2095406,
+    "clatitudine": 42.4732042999999
   },
   {
     "ccomune": "Chieti",
@@ -1613,8 +1613,8 @@
     "canno_inserimento": "2015",
     "cdata_e_ora_inserimento": "2015-07-11T09:44:07Z",
     "cidentificatore_in_openstreetmap": "1109015364",
-    "clongitudine": "14.1396148",
-    "clatitudine": "42.3563507"
+    "clongitudine": 14.1396148,
+    "clatitudine": 42.3563507
   },
   {
     "ccomune": "Francavilla al Mare",
@@ -1624,8 +1624,8 @@
     "canno_inserimento": "2011",
     "cdata_e_ora_inserimento": "2011-01-13T18:19:26Z",
     "cidentificatore_in_openstreetmap": "1102330836",
-    "clongitudine": "14.2656505",
-    "clatitudine": "42.4336612"
+    "clongitudine": 14.2656505,
+    "clatitudine": 42.4336612
   },
   {
     "ccomune": "Lesina",
@@ -1635,8 +1635,8 @@
     "canno_inserimento": "2011",
     "cdata_e_ora_inserimento": "2011-04-12T18:09:15Z",
     "cidentificatore_in_openstreetmap": "1242247137",
-    "clongitudine": "15.3340299",
-    "clatitudine": "41.9120295"
+    "clongitudine": 15.3340299,
+    "clatitudine": 41.9120295
   },
   {
     "ccomune": "Bari",
@@ -1646,8 +1646,8 @@
     "canno_inserimento": "2015",
     "cdata_e_ora_inserimento": "2015-12-26T11:50:56Z",
     "cidentificatore_in_openstreetmap": "849689878",
-    "clongitudine": "16.8765010999999",
-    "clatitudine": "41.1085563999999"
+    "clongitudine": 16.8765010999999,
+    "clatitudine": 41.1085563999999
   },
   {
     "ccomune": "Lecce",
@@ -1657,8 +1657,8 @@
     "canno_inserimento": "2014",
     "cdata_e_ora_inserimento": "2014-02-18T11:49:30Z",
     "cidentificatore_in_openstreetmap": "1533381448",
-    "clongitudine": "18.1735255",
-    "clatitudine": "40.3526432999999"
+    "clongitudine": 18.1735255,
+    "clatitudine": 40.3526432999999
   },
   {
     "ccomune": "Lecce",
@@ -1668,8 +1668,8 @@
     "canno_inserimento": "2015",
     "cdata_e_ora_inserimento": "2015-09-03T11:25:11Z",
     "cidentificatore_in_openstreetmap": "3694779780",
-    "clongitudine": "18.1735773",
-    "clatitudine": "40.3521745999999"
+    "clongitudine": 18.1735773,
+    "clatitudine": 40.3521745999999
   },
   {
     "ccomune": "Matera",
@@ -1679,8 +1679,8 @@
     "canno_inserimento": "2014",
     "cdata_e_ora_inserimento": "2014-01-29T08:22:02Z",
     "cidentificatore_in_openstreetmap": "2531908409",
-    "clongitudine": "16.6088662999999",
-    "clatitudine": "40.6647620999999"
+    "clongitudine": 16.6088662999999,
+    "clatitudine": 40.6647620999999
   },
   {
     "ccomune": "Catania",
@@ -1690,8 +1690,8 @@
     "canno_inserimento": "2014",
     "cdata_e_ora_inserimento": "2014-02-22T13:34:40Z",
     "cidentificatore_in_openstreetmap": "1027319570",
-    "clongitudine": "15.0871420999999",
-    "clatitudine": "37.5168328999999"
+    "clongitudine": 15.0871420999999,
+    "clatitudine": 37.5168328999999
   },
   {
     "ccomune": "Catania",
@@ -1701,8 +1701,8 @@
     "canno_inserimento": "2013",
     "cdata_e_ora_inserimento": "2013-10-16T13:15:29Z",
     "cidentificatore_in_openstreetmap": "1026407671",
-    "clongitudine": "15.0850155",
-    "clatitudine": "37.5167727999999"
+    "clongitudine": 15.0850155,
+    "clatitudine": 37.5167727999999
   },
   {
     "ccomune": "Catania",
@@ -1712,8 +1712,8 @@
     "canno_inserimento": "2015",
     "cdata_e_ora_inserimento": "2015-12-26T10:34:34Z",
     "cidentificatore_in_openstreetmap": "1904791513",
-    "clongitudine": "15.0842557999999",
-    "clatitudine": "37.5158439"
+    "clongitudine": 15.0842557999999,
+    "clatitudine": 37.5158439
   },
   {
     "ccomune": "Catania",
@@ -1723,8 +1723,8 @@
     "canno_inserimento": "2016",
     "cdata_e_ora_inserimento": "2016-01-04T12:44:24Z",
     "cidentificatore_in_openstreetmap": "1856223127",
-    "clongitudine": "15.0862389",
-    "clatitudine": "37.5069863"
+    "clongitudine": 15.0862389,
+    "clatitudine": 37.5069863
   },
   {
     "ccomune": "Paterno'",
@@ -1734,8 +1734,8 @@
     "canno_inserimento": "2014",
     "cdata_e_ora_inserimento": "2014-09-19T17:08:13Z",
     "cidentificatore_in_openstreetmap": "3086347697",
-    "clongitudine": "14.9065045",
-    "clatitudine": "37.5697905"
+    "clongitudine": 14.9065045,
+    "clatitudine": 37.5697905
   },
   {
     "ccomune": "Sinnai",
@@ -1745,8 +1745,8 @@
     "canno_inserimento": "2011",
     "cdata_e_ora_inserimento": "2011-06-04T15:54:16Z",
     "cidentificatore_in_openstreetmap": "471363401",
-    "clongitudine": "9.19807909999999",
-    "clatitudine": "39.2994904999999"
+    "clongitudine": 9.19807909999999,
+    "clatitudine": 39.2994904999999
   },
   {
     "ccomune": "Uta",
@@ -1756,8 +1756,8 @@
     "canno_inserimento": "2012",
     "cdata_e_ora_inserimento": "2012-03-18T12:44:51Z",
     "cidentificatore_in_openstreetmap": "1679704771",
-    "clongitudine": "8.9546134",
-    "clatitudine": "39.2909816"
+    "clongitudine": 8.9546134,
+    "clatitudine": 39.2909816
   },
   {
     "ccomune": "Porcia",
@@ -1767,8 +1767,8 @@
     "canno_inserimento": "2011",
     "cdata_e_ora_inserimento": "2011-01-08T17:46:05Z",
     "cidentificatore_in_openstreetmap": "1091912523",
-    "clongitudine": "12.6280357999999",
-    "clatitudine": "45.9685619999999"
+    "clongitudine": 12.6280357999999,
+    "clatitudine": 45.9685619999999
   },
   {
     "ccomune": "Pordenone",
@@ -1778,8 +1778,8 @@
     "canno_inserimento": "2013",
     "cdata_e_ora_inserimento": "2013-08-09T15:23:33Z",
     "cidentificatore_in_openstreetmap": "1229985648",
-    "clongitudine": "12.6533774",
-    "clatitudine": "45.9660642999999"
+    "clongitudine": 12.6533774,
+    "clatitudine": 45.9660642999999
   },
   {
     "ccomune": "Sacile",
@@ -1789,8 +1789,8 @@
     "canno_inserimento": "2015",
     "cdata_e_ora_inserimento": "2015-08-14T09:31:15Z",
     "cidentificatore_in_openstreetmap": "3314475116",
-    "clongitudine": "12.49862",
-    "clatitudine": "45.95217"
+    "clongitudine": 12.49862,
+    "clatitudine": 45.95217
   },
   {
     "ccomune": "Oristano",
@@ -1800,8 +1800,8 @@
     "canno_inserimento": "2015",
     "cdata_e_ora_inserimento": "2015-01-09T19:23:07Z",
     "cidentificatore_in_openstreetmap": "3265576819",
-    "clongitudine": "8.5878499",
-    "clatitudine": "39.9045946"
+    "clongitudine": 8.5878499,
+    "clatitudine": 39.9045946
   },
   {
     "ccomune": "Prato (PO)",
@@ -1811,8 +1811,8 @@
     "canno_inserimento": "2012",
     "cdata_e_ora_inserimento": "2012-09-15T10:41:34Z",
     "cidentificatore_in_openstreetmap": "1915159400",
-    "clongitudine": "11.0954388",
-    "clatitudine": "43.8786884"
+    "clongitudine": 11.0954388,
+    "clatitudine": 43.8786884
   },
   {
     "ccomune": "Monza (MB)",
@@ -1822,8 +1822,8 @@
     "canno_inserimento": "2016",
     "cdata_e_ora_inserimento": "2016-02-20T09:07:32Z",
     "cidentificatore_in_openstreetmap": "3109442183",
-    "clongitudine": "9.2664849",
-    "clatitudine": "45.5712999"
+    "clongitudine": 9.2664849,
+    "clatitudine": 45.5712999
   },
   {
     "ccomune": "Monza (MB)",
@@ -1833,8 +1833,8 @@
     "canno_inserimento": "2014",
     "cdata_e_ora_inserimento": "2014-04-02T20:39:44Z",
     "cidentificatore_in_openstreetmap": "2401814491",
-    "clongitudine": "9.2758346",
-    "clatitudine": "45.5774448"
+    "clongitudine": 9.2758346,
+    "clatitudine": 45.5774448
   },
   {
     "ccomune": "Monza (MB)",
@@ -1844,8 +1844,8 @@
     "canno_inserimento": "2014",
     "cdata_e_ora_inserimento": "2014-09-19T14:22:41Z",
     "cidentificatore_in_openstreetmap": "2383557266",
-    "clongitudine": "9.27292199999999",
-    "clatitudine": "45.5800699999999"
+    "clongitudine": 9.27292199999999,
+    "clatitudine": 45.5800699999999
   },
   {
     "ccomune": "Monza (MB)",
@@ -1855,7 +1855,7 @@
     "canno_inserimento": "2014",
     "cdata_e_ora_inserimento": "2014-07-25T12:25:53Z",
     "cidentificatore_in_openstreetmap": "2372503778",
-    "clongitudine": "9.28101309999999",
-    "clatitudine": "45.5842645999999"
+    "clongitudine": 9.28101309999999,
+    "clatitudine": 45.5842645999999
   }
 ]
