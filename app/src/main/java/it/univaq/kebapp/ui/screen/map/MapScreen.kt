@@ -9,7 +9,9 @@ import androidx.activity.result.contract.ActivityResultContracts
 import androidx.compose.foundation.layout.*
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.automirrored.filled.ArrowBack
+import androidx.compose.material.icons.filled.Close
 import androidx.compose.material.icons.filled.LocationOn
+import androidx.compose.material.icons.filled.Search
 import androidx.compose.material3.*
 import androidx.compose.runtime.*
 import androidx.compose.ui.Alignment
@@ -39,11 +41,13 @@ fun MapScreen(
 
     var selectedkebabbari by remember { mutableStateOf<Kebabbari?>(null) }
     val sheetState = rememberModalBottomSheetState()
+    var mapView by remember { mutableStateOf<MapView?>(null) }
 
     LaunchedEffect(Unit) {
         Configuration.getInstance().userAgentValue = context.packageName
     }
 
+    // Permessi posizione
     val permissionLauncher = rememberLauncherForActivityResult(
         contract = ActivityResultContracts.RequestMultiplePermissions()
     ) { permissions ->
@@ -54,12 +58,19 @@ fun MapScreen(
             val fusedLocationClient = LocationServices.getFusedLocationProviderClient(context)
             fusedLocationClient.lastLocation.addOnSuccessListener { location ->
                 viewModel.updateLocationPermission(granted, location)
+
+                // CENTRA sulla posizione appena ottenuta
+                location?.let { loc ->
+                    mapView?.controller?.animateTo(GeoPoint(loc.latitude, loc.longitude))
+                    mapView?.controller?.setZoom(13.0)
+                }
             }
         } else {
             viewModel.updateLocationPermission(false, null)
         }
     }
 
+    // Richiesta automatica all'apertura
     LaunchedEffect(Unit) {
         if (!uiState.hasLocationPermission) {
             permissionLauncher.launch(
@@ -71,37 +82,175 @@ fun MapScreen(
         }
     }
 
-    val kebabbariToShow = if (uiState.nearbyKebabbari.isNotEmpty()) {
+    // Lista da mostrare
+    val baseKebabbari = if (uiState.hasLocationPermission &&
+        uiState.userLocation != null &&
+        uiState.nearbyKebabbari.isNotEmpty()
+    ) {
         uiState.nearbyKebabbari
     } else {
         uiState.allKebabbari
     }
 
+    // Filtro ricerca
+    val kebabbariToShow = remember(baseKebabbari, uiState.searchQuery) {
+        if (uiState.searchQuery.isBlank()) {
+            baseKebabbari
+        } else {
+            baseKebabbari.filter { kebab ->
+                kebab.cnome.contains(uiState.searchQuery, ignoreCase = true) ||
+                        kebab.ccomune.contains(uiState.searchQuery, ignoreCase = true) ||
+                        kebab.cprovincia.contains(uiState.searchQuery, ignoreCase = true)
+            }
+        }
+    }
+
+    // Aggiorna i marker quando cambia la ricerca + CENTRA sulla prima città trovata
+    LaunchedEffect(kebabbariToShow, uiState.userLocation) {
+        mapView?.let { map ->
+            map.overlays.clear()
+
+            // Marker kebabbari
+            kebabbariToShow.forEach { kebabbari ->
+                val marker = Marker(map).apply {
+                    position = GeoPoint(
+                        kebabbari.clatitudine.toDouble(),
+                        kebabbari.clongitudine.toDouble()
+                    )
+                    title = kebabbari.cnome
+                    snippet = "${kebabbari.ccomune}, ${kebabbari.cprovincia}"
+                    setAnchor(Marker.ANCHOR_CENTER, Marker.ANCHOR_BOTTOM)
+
+                    setOnMarkerClickListener { _, _ ->
+                        selectedkebabbari = kebabbari
+                        true
+                    }
+                }
+                map.overlays.add(marker)
+            }
+
+            // Pin BLU della tua posizione
+            uiState.userLocation?.let { loc ->
+                val myMarker = Marker(map).apply {
+                    position = GeoPoint(loc.latitude, loc.longitude)
+                    title = "La tua posizione"
+                    snippet = "Sei qui"
+                    setAnchor(Marker.ANCHOR_CENTER, Marker.ANCHOR_BOTTOM)
+
+                    // Marker BLU
+                    icon = context.getDrawable(org.osmdroid.library.R.drawable.marker_default)
+                }
+                map.overlays.add(myMarker)
+            }
+
+            // CENTRA sulla prima città trovata quando cerchi
+            if (uiState.searchQuery.isNotBlank() && kebabbariToShow.isNotEmpty()) {
+                val firstResult = kebabbariToShow.first()
+                map.controller.animateTo(
+                    GeoPoint(
+                        firstResult.clatitudine.toDouble(),
+                        firstResult.clongitudine.toDouble()
+                    )
+                )
+                map.controller.setZoom(14.0)
+            }
+
+            map.invalidate()
+        }
+    }
+
     Scaffold(
         topBar = {
-            TopAppBar(
-                title = {
-                    Text(
-                        if (uiState.nearbyKebabbari.isNotEmpty()) {
-                            "Kebabbari vicini (${uiState.nearbyKebabbari.size})"
-                        } else {
-                            "Mappa Kebabbari (${uiState.allKebabbari.size})"
-                        }
-                    )
-                },
-                navigationIcon = {
-                    IconButton(onClick = onNavigateBack) {
-                        Icon(
-                            imageVector = Icons.AutoMirrored.Default.ArrowBack,
-                            contentDescription = "Indietro"
+            Column {
+                TopAppBar(
+                    title = {
+                        Text(
+                            if (uiState.hasLocationPermission &&
+                                uiState.userLocation != null &&
+                                uiState.nearbyKebabbari.isNotEmpty()
+                            ) {
+                                "Kebabbari entro 20 km (${kebabbariToShow.size})"
+                            } else {
+                                "Mappa Kebabbari (${kebabbariToShow.size})"
+                            }
                         )
-                    }
-                },
-                colors = TopAppBarDefaults.topAppBarColors(
-                    containerColor = MaterialTheme.colorScheme.secondaryContainer,
-                    titleContentColor = MaterialTheme.colorScheme.onSecondaryContainer
+                    },
+                    navigationIcon = {
+                        IconButton(onClick = onNavigateBack) {
+                            Icon(
+                                imageVector = Icons.AutoMirrored.Default.ArrowBack,
+                                contentDescription = "Indietro"
+                            )
+                        }
+                    },
+                    actions = {
+                        // BOTTONE: Ricentra sulla TUA posizione
+                        IconButton(
+                            onClick = {
+                                uiState.userLocation?.let { loc ->
+                                    mapView?.controller?.animateTo(
+                                        GeoPoint(loc.latitude, loc.longitude)
+                                    )
+                                    mapView?.controller?.setZoom(13.0)
+                                } ?: run {
+                                    // Se non hai posizione, richiedila
+                                    permissionLauncher.launch(
+                                        arrayOf(
+                                            Manifest.permission.ACCESS_FINE_LOCATION,
+                                            Manifest.permission.ACCESS_COARSE_LOCATION
+                                        )
+                                    )
+                                }
+                            }
+                        ) {
+                            Icon(
+                                imageVector = Icons.Default.LocationOn,
+                                contentDescription = "Centra sulla mia posizione",
+                                tint = if (uiState.userLocation != null) {
+                                    MaterialTheme.colorScheme.primary
+                                } else {
+                                    MaterialTheme.colorScheme.onSurfaceVariant
+                                }
+                            )
+                        }
+                    },
+                    colors = TopAppBarDefaults.topAppBarColors(
+                        containerColor = MaterialTheme.colorScheme.secondaryContainer,
+                        titleContentColor = MaterialTheme.colorScheme.onSecondaryContainer
+                    )
                 )
-            )
+
+                // Barra di ricerca
+                OutlinedTextField(
+                    value = uiState.searchQuery,
+                    onValueChange = { viewModel.updateSearchQuery(it) },
+                    modifier = Modifier
+                        .fillMaxWidth()
+                        .padding(horizontal = 16.dp, vertical = 8.dp),
+                    placeholder = { Text("Cerca per nome o città...") },
+                    leadingIcon = {
+                        Icon(
+                            imageVector = Icons.Default.Search,
+                            contentDescription = "Cerca"
+                        )
+                    },
+                    trailingIcon = {
+                        if (uiState.searchQuery.isNotBlank()) {
+                            IconButton(onClick = { viewModel.updateSearchQuery("") }) {
+                                Icon(
+                                    imageVector = Icons.Default.Close,
+                                    contentDescription = "Cancella"
+                                )
+                            }
+                        }
+                    },
+                    singleLine = true,
+                    colors = OutlinedTextFieldDefaults.colors(
+                        focusedBorderColor = MaterialTheme.colorScheme.primary,
+                        unfocusedBorderColor = MaterialTheme.colorScheme.outline
+                    )
+                )
+            }
         }
     ) { padding ->
         if (uiState.loadingMsg != null) {
@@ -136,16 +285,22 @@ fun MapScreen(
             return@Scaffold
         }
 
-        Box(modifier = Modifier.fillMaxSize().padding(padding)) {
+        Box(
+            modifier = Modifier
+                .fillMaxSize()
+                .padding(padding)
+        ) {
             AndroidView(
                 modifier = modifier.fillMaxSize(),
-                factory = { context ->
-                    MapView(context).apply {
+                factory = { ctx ->
+                    MapView(ctx).apply {
+                        mapView = this
                         setTileSource(TileSourceFactory.MAPNIK)
                         setMultiTouchControls(true)
 
+                        // Centro iniziale
                         if (uiState.userLocation != null) {
-                            controller.setZoom(12.0)
+                            controller.setZoom(13.0)
                             controller.setCenter(
                                 GeoPoint(
                                     uiState.userLocation.latitude,
@@ -154,82 +309,11 @@ fun MapScreen(
                             )
                         } else {
                             controller.setZoom(13.0)
-                            controller.setCenter(GeoPoint(42.4584, 14.2028)) // Pescara
-                        }
-
-                        kebabbariToShow.forEach { kebabbari ->
-                            val marker = Marker(this).apply {
-                                position = GeoPoint(
-                                    kebabbari.clatitudine.toDouble(),
-                                    kebabbari.clongitudine.toDouble()
-                                )
-                                title = kebabbari.cnome
-                                snippet = "${kebabbari.ccomune}, ${kebabbari.cprovincia}"
-                                setAnchor(Marker.ANCHOR_CENTER, Marker.ANCHOR_BOTTOM)
-
-                                setOnMarkerClickListener { _, _ ->
-                                    selectedkebabbari = kebabbari
-                                    true
-                                }
-                            }
-                            overlays.add(marker)
+                            controller.setCenter(GeoPoint(42.4584, 14.2028))
                         }
                     }
-                },
-                update = { mapView ->
-                    mapView.overlays.clear()
-
-                    kebabbariToShow.forEach { kebabbari ->
-                        val marker = Marker(mapView).apply {
-                            position = GeoPoint(
-                                kebabbari.clatitudine.toDouble(),
-                                kebabbari.clongitudine.toDouble()
-                            )
-                            title = kebabbari.cnome
-                            snippet = "${kebabbari.ccomune}, ${kebabbari.cprovincia}"
-                            setAnchor(Marker.ANCHOR_CENTER, Marker.ANCHOR_BOTTOM)
-
-                            setOnMarkerClickListener { _, _ ->
-                                selectedkebabbari = kebabbari
-                                true
-                            }
-                        }
-                        mapView.overlays.add(marker)
-                    }
-
-                    if (uiState.userLocation != null) {
-                        mapView.controller.setCenter(
-                            GeoPoint(
-                                uiState.userLocation.latitude,
-                                uiState.userLocation.longitude
-                            )
-                        )
-                    }
-
-                    mapView.invalidate()
                 }
             )
-
-            if (uiState.hasLocationPermission &&
-                uiState.userLocation != null &&
-                uiState.nearbyKebabbari.isEmpty() &&
-                uiState.allKebabbari.isNotEmpty()
-            ) {
-                Card(
-                    modifier = Modifier
-                        .align(Alignment.BottomCenter)
-                        .padding(16.dp),
-                    colors = CardDefaults.cardColors(
-                        containerColor = MaterialTheme.colorScheme.errorContainer
-                    )
-                ) {
-                    Text(
-                        text = "Nessun kebabbari entro 10 km dalla tua posizione",
-                        modifier = Modifier.padding(16.dp),
-                        style = MaterialTheme.typography.bodyMedium
-                    )
-                }
-            }
         }
 
         if (selectedkebabbari != null) {

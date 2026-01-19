@@ -8,6 +8,7 @@ import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.padding
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.automirrored.filled.List
+import androidx.compose.material.icons.filled.Home
 import androidx.compose.material.icons.filled.LocationOn
 import androidx.compose.material3.Icon
 import androidx.compose.material3.NavigationBar
@@ -17,6 +18,7 @@ import androidx.compose.runtime.Composable
 import androidx.compose.runtime.remember
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.vector.ImageVector
+import androidx.navigation.NavDestination
 import androidx.navigation.NavHostController
 import androidx.navigation.compose.rememberNavController
 import it.univaq.kebapp.ui.theme.KebabbariApplicationTheme
@@ -29,6 +31,7 @@ import androidx.navigation.compose.currentBackStackEntryAsState
 import androidx.navigation.toRoute
 import dagger.hilt.android.AndroidEntryPoint
 import it.univaq.kebapp.ui.screen.detail.DetailScreen
+import it.univaq.kebapp.ui.screen.home.HomeScreen
 import it.univaq.kebapp.ui.screen.list.ListScreen
 import it.univaq.kebapp.ui.screen.map.MapScreen
 
@@ -40,18 +43,40 @@ class MainActivity : ComponentActivity() {
         setContent {
             KebabbariApplicationTheme {
                 val navController = rememberNavController()
+
+                // Osserva rotta corrente
+                val navBackStackEntry by navController.currentBackStackEntryAsState()
+                val currentDestination = navBackStackEntry?.destination
+
                 Scaffold(
                     modifier = Modifier.fillMaxSize(),
-                    bottomBar = { BottomNavigationBar(navController) }
+                    // Mostra la bottom bar SOLO se non siamo in Home
+                    bottomBar = {
+                        if (!isHomeDestination(currentDestination)) {
+                            BottomNavigationBar(navController)
+                        }
+                    }
                 ) { innerPadding ->
                     NavHost(
                         modifier = Modifier.padding(innerPadding),
                         navController = navController,
-                        startDestination = Screen.List
+                        startDestination = Screen.Home
                     ) {
+                        composable<Screen.Home> {
+                            HomeScreen(
+                                modifier = Modifier.fillMaxSize(),
+                                onNavigateToList = {
+                                    navController.navigate(Screen.List)
+                                },
+                                onNavigateToMap = {
+                                    navController.navigate(Screen.Map)
+                                }
+                            )
+                        }
                         composable<Screen.List> {
                             ListScreen(
                                 modifier = Modifier.fillMaxSize(),
+                                onNavigateBack = { navController.popBackStack() },   // AGGIUNTO
                                 onNavigateToDetail = { kebabbari ->
                                     navController.navigate(
                                         Screen.Detail(
@@ -67,6 +92,7 @@ class MainActivity : ComponentActivity() {
                                 }
                             )
                         }
+
                         composable<Screen.Map> {
                             MapScreen(
                                 modifier = Modifier.fillMaxSize(),
@@ -87,6 +113,11 @@ class MainActivity : ComponentActivity() {
         }
     }
 
+    private fun isHomeDestination(destination: NavDestination?): Boolean {
+        // Route generata da navigation-compose-serialization è il canonicalName della classe
+        return destination?.route == Screen.Home::class.java.canonicalName
+    }
+
     @Composable
     fun BottomNavigationBar(navController: NavHostController) {
         val items = remember {
@@ -104,7 +135,7 @@ class MainActivity : ComponentActivity() {
             )
         }
 
-        NavigationBar {
+        androidx.compose.material3.NavigationBar {
             val navigationBackStackEntry by navController.currentBackStackEntryAsState()
             val currentRoute = navigationBackStackEntry?.destination?.route
 
@@ -134,6 +165,9 @@ class MainActivity : ComponentActivity() {
     )
 
     sealed class Screen {
+        @Serializable
+        data object Home : Screen()
+
         @Serializable
         data object List : Screen()
 

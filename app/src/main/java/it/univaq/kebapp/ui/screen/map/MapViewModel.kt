@@ -19,7 +19,8 @@ data class MapUIState(
     val loadingMsg: String? = null,
     val errorMsg: String? = null,
     val hasLocationPermission: Boolean = false,
-    val userLocation: Location? = null
+    val userLocation: Location? = null,
+    val searchQuery: String = ""
 )
 
 @HiltViewModel
@@ -45,8 +46,12 @@ class MapViewModel @Inject constructor(
         }
     }
 
+    fun updateSearchQuery(query: String) {
+        uiState = uiState.copy(searchQuery = query)
+    }
+
     private fun filterNearbyKebabbari(userLocation: Location) {
-        val maxDistanceKm = 10.0
+        val maxDistanceKm = 20.0   // ESTESO A 20 KM
 
         val nearby = uiState.allKebabbari.filter { kebabbari ->
             val kebabLocation = Location("").apply {

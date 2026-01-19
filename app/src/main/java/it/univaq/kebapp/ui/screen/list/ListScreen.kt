@@ -1,98 +1,176 @@
 package it.univaq.kebapp.ui.screen.list
 
-import androidx.compose.foundation.clickable
-import androidx.compose.foundation.layout.Box
-import androidx.compose.foundation.layout.Column
-import androidx.compose.foundation.layout.fillMaxSize
-import androidx.compose.foundation.layout.fillMaxWidth
-import androidx.compose.foundation.layout.padding
+import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.lazy.LazyColumn
-import androidx.compose.material3.CircularProgressIndicator
-import androidx.compose.material3.MaterialTheme
-import androidx.compose.material3.Text
-import androidx.compose.runtime.Composable
-import androidx.compose.ui.Alignment
+import androidx.compose.foundation.lazy.items
+import androidx.compose.material.icons.Icons
+import androidx.compose.material.icons.automirrored.filled.ArrowBack
+import androidx.compose.material.icons.filled.Close
+import androidx.compose.material.icons.filled.Search
+import androidx.compose.material3.*
+import androidx.compose.runtime.*
 import androidx.compose.ui.Modifier
-import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.hilt.navigation.compose.hiltViewModel
 import it.univaq.kebapp.domain.model.Kebabbari
 
+@OptIn(ExperimentalMaterial3Api::class)
 @Composable
 fun ListScreen(
     modifier: Modifier = Modifier,
     viewModel: ListViewModel = hiltViewModel(),
+    onNavigateBack: () -> Unit = {},
     onNavigateToDetail: (Kebabbari) -> Unit = {}
 ) {
     val uiState = viewModel.uiState
+    var searchQuery by remember { mutableStateOf("") }
 
-    if (uiState.loadingMsg != null) {
-        Box(modifier = modifier.fillMaxSize(), contentAlignment = Alignment.Center) {
-            Column(horizontalAlignment = Alignment.CenterHorizontally) {
-                CircularProgressIndicator()
-                Text(
-                    text = uiState.loadingMsg,
-                    modifier = Modifier.padding(top = 16.dp)
+    // Filtra i kebabbari in base alla ricerca
+    val filteredKebabbari = remember(uiState.kebabbari, searchQuery) {
+        if (searchQuery.isBlank()) {
+            uiState.kebabbari
+        } else {
+            uiState.kebabbari.filter { kebab ->
+                kebab.cnome.contains(searchQuery, ignoreCase = true) ||
+                        kebab.ccomune.contains(searchQuery, ignoreCase = true) ||
+                        kebab.cprovincia.contains(searchQuery, ignoreCase = true)
+            }
+        }
+    }
+
+    Scaffold(
+        topBar = {
+            Column {
+                TopAppBar(
+                    title = { Text("Lista Kebabbari") },
+                    navigationIcon = {
+                        IconButton(onClick = onNavigateBack) {
+                            Icon(
+                                imageVector = Icons.AutoMirrored.Filled.ArrowBack,
+                                contentDescription = "Indietro"
+                            )
+                        }
+                    },
+                    colors = TopAppBarDefaults.topAppBarColors(
+                        containerColor = MaterialTheme.colorScheme.primaryContainer,
+                        titleContentColor = MaterialTheme.colorScheme.onPrimaryContainer
+                    )
+                )
+
+                // Barra di ricerca
+                SearchBar(
+                    query = searchQuery,
+                    onQueryChange = { searchQuery = it },
+                    onClearClick = { searchQuery = "" }
                 )
             }
         }
-        return
-    }
-
-    if (uiState.errorMsg != null) {
-        Box(modifier = modifier.fillMaxSize(), contentAlignment = Alignment.Center) {
-            Text(
-                text = uiState.errorMsg,
-                color = MaterialTheme.colorScheme.error
-            )
-        }
-        return
-    }
-
-    Column(modifier = modifier.padding(16.dp)) {
-        Text(
-            text = "Kebabbari (${uiState.kebabbari.size})",
-            style = MaterialTheme.typography.titleLarge,
-            fontWeight = FontWeight.Bold,
-            modifier = Modifier.padding(bottom = 16.dp)
-        )
-        LazyColumn(modifier = Modifier.fillMaxWidth()) {
-            items(uiState.kebabbari.size) { index ->
-                val kebabbaro = uiState.kebabbari[index]
-                KebabbariItem(
-                    modifier = Modifier.fillMaxWidth(),
-                    kebabbaro = kebabbaro,
-                    onItemClick = { onNavigateToDetail(it) }
-                )
+    ) { padding ->
+        Box(
+            modifier = modifier
+                .fillMaxSize()
+                .padding(padding)
+        ) {
+            if (filteredKebabbari.isEmpty() && searchQuery.isNotBlank()) {
+                // Messaggio quando non ci sono risultati
+                Box(
+                    modifier = Modifier.fillMaxSize(),
+                    contentAlignment = androidx.compose.ui.Alignment.Center
+                ) {
+                    Text(
+                        text = "Nessun kebabbaro trovato",
+                        style = MaterialTheme.typography.bodyLarge,
+                        color = MaterialTheme.colorScheme.onSurfaceVariant
+                    )
+                }
+            } else {
+                LazyColumn(
+                    modifier = Modifier.fillMaxSize(),
+                    contentPadding = PaddingValues(16.dp)
+                ) {
+                    items(filteredKebabbari) { kebabbari ->
+                        KebabbariItem(
+                            kebabbari = kebabbari,
+                            onClick = { onNavigateToDetail(kebabbari) }
+                        )
+                    }
+                }
             }
         }
     }
 }
 
 @Composable
-fun KebabbariItem(
-    modifier: Modifier = Modifier,
-    kebabbaro: Kebabbari,
-    onItemClick: (Kebabbari) -> Unit
+private fun SearchBar(
+    query: String,
+    onQueryChange: (String) -> Unit,
+    onClearClick: () -> Unit
 ) {
-    Column(
-        modifier = modifier
-            .padding(vertical = 8.dp)
-            .clickable { onItemClick(kebabbaro) }
+    OutlinedTextField(
+        value = query,
+        onValueChange = onQueryChange,
+        modifier = Modifier
+            .fillMaxWidth()
+            .padding(horizontal = 16.dp, vertical = 8.dp),
+        placeholder = { Text("Cerca kebabbari...") },
+        leadingIcon = {
+            Icon(
+                imageVector = Icons.Default.Search,
+                contentDescription = "Cerca"
+            )
+        },
+        trailingIcon = {
+            if (query.isNotBlank()) {
+                IconButton(onClick = onClearClick) {
+                    Icon(
+                        imageVector = Icons.Default.Close,
+                        contentDescription = "Cancella"
+                    )
+                }
+            }
+        },
+        singleLine = true,
+        colors = OutlinedTextFieldDefaults.colors(
+            focusedBorderColor = MaterialTheme.colorScheme.primary,
+            unfocusedBorderColor = MaterialTheme.colorScheme.outline
+        )
+    )
+}
+
+@Composable
+private fun KebabbariItem(
+    kebabbari: Kebabbari,
+    onClick: () -> Unit
+) {
+    Card(
+        onClick = onClick,
+        modifier = Modifier
+            .padding(bottom = 8.dp)
+            .fillMaxWidth(),
+        colors = CardDefaults.cardColors(
+            containerColor = MaterialTheme.colorScheme.surface
+        ),
+        elevation = CardDefaults.cardElevation(defaultElevation = 2.dp)
     ) {
-        Text(
-            text = kebabbaro.cnome,
-            style = MaterialTheme.typography.titleMedium,
-            fontWeight = FontWeight.Bold
-        )
-        Text(
-            text = "${kebabbaro.ccomune}, ${kebabbaro.cprovincia}",
-            style = MaterialTheme.typography.bodyMedium
-        )
-        Text(
-            text = kebabbaro.cregione,
-            style = MaterialTheme.typography.bodySmall,
-            color = MaterialTheme.colorScheme.onSurfaceVariant
-        )
+        Column(
+            modifier = Modifier.padding(16.dp)
+        ) {
+            Text(
+                text = kebabbari.cnome,
+                style = MaterialTheme.typography.titleMedium,
+                color = MaterialTheme.colorScheme.onSurface
+            )
+            Spacer(modifier = Modifier.height(4.dp))
+            Text(
+                text = "${kebabbari.ccomune}, ${kebabbari.cprovincia}",
+                style = MaterialTheme.typography.bodyMedium,
+                color = MaterialTheme.colorScheme.onSurfaceVariant
+            )
+            Text(
+                text = kebabbari.cregione,
+                style = MaterialTheme.typography.bodySmall,
+                color = MaterialTheme.colorScheme.onSurfaceVariant
+            )
+        }
     }
 }
