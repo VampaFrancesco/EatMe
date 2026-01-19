@@ -32,6 +32,7 @@ private val LightColorScheme = lightColorScheme(
     */
 )
 
+@JvmOverloads
 @Composable
 fun KebabbariApplicationTheme(
     darkTheme: Boolean = isSystemInDarkTheme(),

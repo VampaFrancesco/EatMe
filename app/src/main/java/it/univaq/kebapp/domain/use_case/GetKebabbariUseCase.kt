@@ -11,36 +11,34 @@ import retrofit2.HttpException
 import javax.inject.Inject
 
 class GetKebabbariUseCase @Inject constructor(
-    private val remoteRepo : KebabbariRemoteRepository,
-    private val localRepo : KebabbariLocalRepository
-
-){
-
+    private val remoteRepo: KebabbariRemoteRepository,
+    private val localRepo: KebabbariLocalRepository
+) {
     operator fun invoke(): Flow<Resource<List<Kebabbari>>> {
-        return flow{
+        return flow {
             emit(Resource.Loading("Loading..."))
 
             localRepo.getKebabbari()
-                .catch { emit(Resource.Error("Error, data not found in local database")) }
+                .catch {
+                    emit(Resource.Error("Error, data not found in local database"))
+                }
                 .collect { list ->
-                    if(list.isEmpty()){
-                        //remote repo
+                    if (list.isEmpty()) {
                         try {
                             val data = remoteRepo.getKebabbari()
                             localRepo.insert(data)
                             emit(Resource.Success(data))
-
-
-                        }catch(e : HttpException){
+                        } catch (e: HttpException) {
                             e.printStackTrace()
-                            emit(Resource.Error("Error, data not found in remote database"))
+                            emit(Resource.Error("HTTP Error: ${e.code()}"))
+                        } catch (e: Exception) {
+                            e.printStackTrace()
+                            emit(Resource.Error("Network error: ${e.message}"))
                         }
-                    }else{
+                    } else {
                         emit(Resource.Success(list))
                     }
                 }
         }
-
-
     }
 }

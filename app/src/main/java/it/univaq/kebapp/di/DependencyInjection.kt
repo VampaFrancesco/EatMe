@@ -65,7 +65,8 @@ object DatabaseModule {
             context,
             KebabbariDatabase::class.java,
             "kebabbari_database"
-        ).build()
+        ).fallbackToDestructiveMigration()
+            .build()
 
 
     @Provides

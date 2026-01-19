@@ -5,7 +5,7 @@ import androidx.room.RoomDatabase
 import it.univaq.kebapp.data.local.dao.KebabbariDao
 import it.univaq.kebapp.data.local.entity.LocalKebabbari
 
-@Database(entities = [LocalKebabbari::class], version = 1, exportSchema = false )
+@Database(entities = [LocalKebabbari::class], version = 2, exportSchema = false )
 abstract class KebabbariDatabase : RoomDatabase() {
 
     abstract fun getKebabbariDao(): KebabbariDao

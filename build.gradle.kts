@@ -13,4 +13,7 @@ plugins {
     /* Plugin Serializzazione */
     alias(libs.plugins.jetbrains.serialization)
 
+    /* plugin Maps */
+    alias(libs.plugins.secrets.gradle) apply false
+
 }

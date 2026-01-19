@@ -11,6 +11,9 @@ plugins {
 
     /* Plugin serializzazione */
     alias(libs.plugins.jetbrains.serialization)
+
+    /* Plugin Maps */
+    alias(libs.plugins.secrets.gradle)
 }
 
 android {
@@ -89,5 +92,10 @@ dependencies {
 
     /* View model compose */
     implementation(libs.androidx.lifecycle.viewmodel.compose)
+
+    /* Maps */
+    implementation(libs.play.services.location)
+    implementation(libs.maps.compose)
+    implementation(libs.osmdroid.android)
 
 }

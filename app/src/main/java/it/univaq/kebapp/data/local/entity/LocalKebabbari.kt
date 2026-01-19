@@ -10,8 +10,8 @@ data class LocalKebabbari(
     val id : Int?,
     val cnome : String,
     val ccomune: String,
-    val clatitudine: String,
-    val clongitudine: String,
+    val clatitudine: Double,
+    val clongitudine: Double,
     val cprovincia: String,
     val cregione: String
 )
