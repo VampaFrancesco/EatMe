@@ -1,0 +1,24 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="48dp"
+    android:height="48dp"
+    android:viewportWidth="24"
+    android:viewportHeight="24">
+    <!-- Cerchio esterno blu con pulsazione -->
+    <path
+        android:pathData="M12,12m-8,0a8,8 0,1 1,16 0a8,8 0,1 1,-16 0"
+        android:fillColor="#1976D2"
+        android:fillAlpha="0.3"/>
+    <!-- Cerchio medio -->
+    <path
+        android:pathData="M12,12m-5,0a5,5 0,1 1,10 0a5,5 0,1 1,-10 0"
+        android:fillColor="#1976D2"
+        android:fillAlpha="0.6"/>
+    <!-- Cerchio centrale bianco -->
+    <path
+        android:pathData="M12,12m-3,0a3,3 0,1 1,6 0a3,3 0,1 1,-6 0"
+        android:fillColor="#FFFFFF"/>
+    <!-- Punto blu centrale -->
+    <path
+        android:pathData="M12,12m-1.5,0a1.5,1.5 0,1 1,3 0a1.5,1.5 0,1 1,-3 0"
+        android:fillColor="#1565C0"/>
+</vector>

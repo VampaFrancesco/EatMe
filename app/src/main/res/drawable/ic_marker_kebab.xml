@@ -1,0 +1,18 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="48dp"
+    android:height="48dp"
+    android:viewportWidth="24"
+    android:viewportHeight="24">
+    <!-- Pin base arancione -->
+    <path
+        android:pathData="M12,2C8.13,2 5,5.13 5,9c0,5.25 7,13 7,13s7,-7.75 7,-13c0,-3.87 -3.13,-7 -7,-7z"
+        android:fillColor="#F57C00"/>
+    <!-- Cerchio interno più scuro -->
+    <path
+        android:pathData="M12,11.5m-2.5,0a2.5,2.5 0,1 1,5 0a2.5,2.5 0,1 1,-5 0"
+        android:fillColor="#E65100"/>
+    <!-- 🥙 Emoji stilizzato - forma kebab semplice -->
+    <path
+        android:pathData="M12,6.5 L10.5,8.5 L10.5,10.5 L13.5,10.5 L13.5,8.5 Z"
+        android:fillColor="#FFF3E0"/>
+</vector>
