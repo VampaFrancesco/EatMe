@@ -24,6 +24,7 @@ playServicesLocation = "21.3.0"
 mapsCompose = "4.3.3"
 secretsGradlePlugin = "2.0.1"
 osmdroid = "6.1.18"
+osmbonuspack = "6.9.0"
 
 
 
@@ -58,6 +59,7 @@ retrofit = { module = "com.squareup.retrofit2:retrofit", version.ref = "retrofit
 play-services-location = { module = "com.google.android.gms:play-services-location", version.ref = "playServicesLocation" }
 maps-compose = { module = "com.google.maps.android:maps-compose", version.ref = "mapsCompose" }
 osmdroid-android = { module = "org.osmdroid:osmdroid-android", version.ref = "osmdroid" }
+osmbonuspack = { module = "com.github.MKergall:osmbonuspack", version.ref = "osmbonuspack" }
 
 
 [plugins]

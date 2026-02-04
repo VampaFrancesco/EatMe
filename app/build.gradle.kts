@@ -98,5 +98,6 @@ dependencies {
     implementation(libs.play.services.location)
     implementation(libs.maps.compose)
     implementation(libs.osmdroid.android)
+    implementation(libs.osmbonuspack)
 
 }

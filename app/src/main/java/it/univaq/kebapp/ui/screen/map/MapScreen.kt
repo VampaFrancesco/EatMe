@@ -3,6 +3,11 @@ package it.univaq.kebapp.ui.screen.map
 import android.Manifest
 import android.annotation.SuppressLint
 import android.content.Intent
+import android.graphics.Bitmap
+import android.graphics.Canvas
+import android.graphics.Color as AndroidColor
+import android.graphics.Paint
+import android.graphics.Rect
 import android.net.Uri
 import androidx.activity.compose.rememberLauncherForActivityResult
 import androidx.activity.result.contract.ActivityResultContracts
@@ -30,6 +35,7 @@ import androidx.compose.ui.graphics.Brush
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.text.font.FontWeight
+import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.viewinterop.AndroidView
 import androidx.core.content.ContextCompat
@@ -37,7 +43,12 @@ import androidx.hilt.navigation.compose.hiltViewModel
 import com.google.android.gms.location.LocationServices
 import it.univaq.kebapp.R
 import it.univaq.kebapp.domain.model.Kebabbari
+import org.osmdroid.bonuspack.clustering.RadiusMarkerClusterer
 import org.osmdroid.config.Configuration
+import org.osmdroid.events.DelayedMapListener
+import org.osmdroid.events.MapListener
+import org.osmdroid.events.ScrollEvent
+import org.osmdroid.events.ZoomEvent
 import org.osmdroid.tileprovider.tilesource.TileSourceFactory
 import org.osmdroid.util.GeoPoint
 import org.osmdroid.views.MapView
@@ -97,12 +108,9 @@ fun MapScreen(
         }
     }
 
-    // Lista da mostrare
-    val baseKebabbari = if (uiState.hasLocationPermission &&
-        uiState.userLocation != null &&
-        uiState.nearbyKebabbari.isNotEmpty()
-    ) {
-        uiState.nearbyKebabbari
+    // Lista da mostrare - usa visibleKebabbari che viene aggiornata dal viewport della mappa
+    val baseKebabbari = if (uiState.visibleKebabbari.isNotEmpty()) {
+        uiState.visibleKebabbari
     } else {
         uiState.allKebabbari
     }
@@ -125,6 +133,13 @@ fun MapScreen(
         mapView?.let { map ->
             map.overlays.clear()
 
+            // Crea il clusterer per i kebabbari
+            val clusterIcon = createClusterIcon(context)
+            val clusterer = RadiusMarkerClusterer(context).apply {
+                setIcon(clusterIcon)
+                setRadius(100) // Raggio in pixel per il raggruppamento
+            }
+
             // Marker kebabbari con icona ARANCIONE personalizzata
             val kebabIcon = ContextCompat.getDrawable(context, R.drawable.ic_marker_kebab)
             kebabbariToShow.forEach { kebabbari ->
@@ -143,10 +158,13 @@ fun MapScreen(
                         true
                     }
                 }
-                map.overlays.add(marker)
+                clusterer.add(marker)
             }
 
-            // Marker BLU per la posizione utente
+            // Aggiungi il clusterer alla mappa
+            map.overlays.add(clusterer)
+
+            // Marker BLU per la posizione utente (NON nel cluster)
             uiState.userLocation?.let { loc ->
                 val userIcon = ContextCompat.getDrawable(context, R.drawable.ic_marker_user)
                 val myMarker = Marker(map).apply {
@@ -180,16 +198,7 @@ fun MapScreen(
             Column {
                 TopAppBar(
                     title = {
-                        Text(
-                            if (uiState.hasLocationPermission &&
-                                uiState.userLocation != null &&
-                                uiState.nearbyKebabbari.isNotEmpty()
-                            ) {
-                                "Kebabbari entro 20 km (${kebabbariToShow.size})"
-                            } else {
-                                "Mappa Kebabbari (${kebabbariToShow.size})"
-                            }
-                        )
+                        Text("Mappa Kebabbari (${kebabbariToShow.size})")
                     },
                     navigationIcon = {
                         IconButton(onClick = onNavigateBack) {
@@ -314,6 +323,34 @@ fun MapScreen(
                         setTileSource(TileSourceFactory.MAPNIK)
                         setMultiTouchControls(true)
 
+                        // Listener per aggiornare i kebabbari visibili quando si zooma o si sposta
+                        val mapListener = DelayedMapListener(object : MapListener {
+                            override fun onScroll(event: ScrollEvent?): Boolean {
+                                updateVisibleArea()
+                                return true
+                            }
+
+                            override fun onZoom(event: ZoomEvent?): Boolean {
+                                updateVisibleArea()
+                                return true
+                            }
+
+                            private fun updateVisibleArea() {
+                                val boundingBox = this@apply.boundingBox
+                                viewModel.updateVisibleKebabbari(
+                                    BoundingBox(
+                                        north = boundingBox.latNorth,
+                                        south = boundingBox.latSouth,
+                                        east = boundingBox.lonEast,
+                                        west = boundingBox.lonWest
+                                    ),
+                                    zoom = this@apply.zoomLevelDouble
+                                )
+                            }
+                        }, 300) // Delay di 300ms per evitare update troppo frequenti
+
+                        addMapListener(mapListener)
+
                         // Centro iniziale
                         if (uiState.userLocation != null) {
                             controller.setZoom(13.0)
@@ -324,8 +361,22 @@ fun MapScreen(
                                 )
                             )
                         } else {
-                            controller.setZoom(13.0)
-                            controller.setCenter(GeoPoint(42.4584, 14.2028))
+                            controller.setZoom(6.0) // Zoom più ampio per vedere più kebabbari inizialmente
+                            controller.setCenter(GeoPoint(42.4584, 14.2028)) // Centro Italia
+                        }
+
+                        // Aggiorna i kebabbari visibili all'avvio
+                        post {
+                            val boundingBox = this.boundingBox
+                            viewModel.updateVisibleKebabbari(
+                                BoundingBox(
+                                    north = boundingBox.latNorth,
+                                    south = boundingBox.latSouth,
+                                    east = boundingBox.lonEast,
+                                    west = boundingBox.lonWest
+                                ),
+                                zoom = this.zoomLevelDouble
+                            )
                         }
                     }
                 }
@@ -491,4 +542,33 @@ fun MapScreen(
             }
         }
     }
+}
+
+/**
+ * Crea un'icona per il cluster con sfondo arancione.
+ * Il numero di marker nel cluster viene disegnato automaticamente da RadiusMarkerClusterer.
+ */
+private fun createClusterIcon(context: android.content.Context): Bitmap {
+    val size = 80
+    val bitmap = Bitmap.createBitmap(size, size, Bitmap.Config.ARGB_8888)
+    val canvas = Canvas(bitmap)
+    
+    // Cerchio arancione di sfondo
+    val paintBackground = Paint().apply {
+        color = 0xFFFF6B00.toInt() // Arancione kebab
+        isAntiAlias = true
+        style = Paint.Style.FILL
+    }
+    canvas.drawCircle(size / 2f, size / 2f, size / 2f - 4f, paintBackground)
+    
+    // Bordo bianco
+    val paintBorder = Paint().apply {
+        color = AndroidColor.WHITE
+        isAntiAlias = true
+        style = Paint.Style.STROKE
+        strokeWidth = 4f
+    }
+    canvas.drawCircle(size / 2f, size / 2f, size / 2f - 4f, paintBorder)
+    
+    return bitmap
 }

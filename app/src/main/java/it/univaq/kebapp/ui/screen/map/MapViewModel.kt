@@ -15,12 +15,22 @@ import javax.inject.Inject
 
 data class MapUIState(
     val allKebabbari: List<Kebabbari> = emptyList(),
+    val visibleKebabbari: List<Kebabbari> = emptyList(), // Kebabbari nell'area visibile della mappa
     val nearbyKebabbari: List<Kebabbari> = emptyList(),
     val loadingMsg: String? = null,
     val errorMsg: String? = null,
     val hasLocationPermission: Boolean = false,
     val userLocation: Location? = null,
-    val searchQuery: String = ""
+    val searchQuery: String = "",
+    val currentZoom: Double = 13.0 // Zoom corrente della mappa
+)
+
+// Rappresenta il bounding box visibile della mappa
+data class BoundingBox(
+    val north: Double,
+    val south: Double,
+    val east: Double,
+    val west: Double
 )
 
 @HiltViewModel
@@ -48,6 +58,25 @@ class MapViewModel @Inject constructor(
 
     fun updateSearchQuery(query: String) {
         uiState = uiState.copy(searchQuery = query)
+    }
+
+    /**
+     * Aggiorna i kebabbari visibili in base al bounding box della mappa.
+     * Questo metodo viene chiamato quando l'utente zooma o sposta la mappa.
+     */
+    fun updateVisibleKebabbari(boundingBox: BoundingBox, zoom: Double) {
+        val visible = uiState.allKebabbari.filter { kebabbari ->
+            val lat = kebabbari.clatitudine.toDouble()
+            val lng = kebabbari.clongitudine.toDouble()
+            
+            lat >= boundingBox.south && lat <= boundingBox.north &&
+            lng >= boundingBox.west && lng <= boundingBox.east
+        }
+        
+        uiState = uiState.copy(
+            visibleKebabbari = visible,
+            currentZoom = zoom
+        )
     }
 
     private fun filterNearbyKebabbari(userLocation: Location) {
@@ -79,7 +108,8 @@ class MapViewModel @Inject constructor(
                         uiState = uiState.copy(
                             loadingMsg = null,
                             errorMsg = null,
-                            allKebabbari = resource.data
+                            allKebabbari = resource.data,
+                            visibleKebabbari = resource.data // Inizialmente mostra tutti
                         )
                         uiState.userLocation?.let { filterNearbyKebabbari(it) }
                     }
